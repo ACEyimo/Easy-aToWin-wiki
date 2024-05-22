@@ -1,8 +1,6 @@
 
 ---
-title: 开源静态文档网站生成工具
-keywords: teedoc, markdown, jupyter notebook, html, 文档生成, 替代gitbook, 网站生成, 静态网站, 文档网站生成, 多文档, 静态博客
-desc: teedoc，开源静态文档网站生成工具，将 markdown 或者 jupyter notbook 转换成 html 静态网页， 用于个人或企业建站，建博客，建资料库，wiki等
+title: 轻松从安卓跨越到Windows
 id: home_page
 ---
 
@@ -15,12 +13,13 @@ id: home_page
 <div id="fullpage">
     <div class="section" style="height: 100vh;">
         <div>
-            <h1><span>teedoc</span></h1>
-            <h3>简而全的开源静态网站/文档/博客生成器</h3>
+            <h1><span>Easy-aToWin</span></h1>
+            <h3>骁龙845/855等机型从安卓到windows的刷机包</h3>
+            测试文本
         </div>
         <div class="big_btn_wrapper">
             <div class="big_btn">
-                <a href="#" id="learn_more">了解更多</a>
+                <a href="#" id="learn_more">往下滑</a>
             </div>
             <div class="big_btn">
                 <a href="/get_started/zh/">开始使用</a>
@@ -30,25 +29,26 @@ id: home_page
     <div class="section dsc_wrapper_left">
         <div>
             <div class="dsc_left">
-                <h2>简单书写</h2>
-                <h2>自动生成</h2>
+                <h2>拒绝麻烦</h2>
+                <h2>无需电脑</h2>
+                <h2>简单快速</h2>
             </div>
             <div class="dsc_right">
-                使用 <img class="logo" src="/static/image/markdown.svg"> Markdown 或者 <img class="logo" src="/static/image/jupyter.svg">jupyter notebook 书写，</br>
-                自动生成 HTML 页面
+                <h3>只需两步</h3>
+                分区 → 刷入，然后...
+                <h3>享受</h3>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_right">
         <div>
             <div class="dsc_left">
-                <img class="logo" src="/static/image/windows.svg"> <img class="logo" src="/static/image/linux.svg"> <img class="logo" src="/static/image/mac.svg"><br/>
-                使用 python 编写， 跨平台， 使用 pip 即可安装，</br>
-                <img class="logo" src="/static/image/plugin.svg"> 支持插件安装及自定义插件
+                上线之前经过详细测试，确保不会出错。</br>
+                脚本适应于绝大部分机型，部分机型的特殊性可单独定制。
             </div>
             <div class="dsc_right">
-                <h2>跨平台</h2>
-                <h2>插件支持</h2>
+                <h2>稳定通用</h2>
+                <h2>方便适配</h2>
             </div>
         </div>
     </div>

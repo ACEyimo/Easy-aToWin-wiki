@@ -1,37 +1,37 @@
 {
     "locale": "zh_CN",
     "navbar": {
-        "title": "teedoc",
+        "title": "Easy-aToWin",
         "logo": {
-            "alt": "teedoc logo",
-            "src": "/static/image/logo.png"
+            "alt": "Easy-aToWin logo",
+            "src": "/static/image/logo.svg"
         },
         "home_url": "/",
         "items": [
             {
                 "url": "/get_started/zh/",
-                "label": "安装使用",
+                "label": "开始使用",
                 "position": "left"
             },
             {
                 "url": "/develop/zh/",
-                "label": "开发",
+                "label": "开发文档",
                 "position": "left"
             },
             {
-                "url": "/blog/",
-                "label": "博客",
+                "url": "/download/zh/",
+                "label": "下载",
                 "position": "left"
             },
             {
-                "url": "https://github.com/neutree/teedoc",
-                "label": "github",
+                "url": "https://github.com/aceyimo/easy-aToWin",
+                "label": "<img src='/static/image/github.png' style='height: 2em;vertical-align: middle;'>",
                 "target": "_blank",
                 "position": "right"
             },
             {
                 "id": "language",
-                "label": "Language: ",
+                "label": "<img src='/static/image/language.png' style='height: 1.5em;vertical-align: middle;'>&nbsp",
                 "position": "right",
                 "type": "language"
             }
@@ -40,40 +40,40 @@
     "footer":{
         "top":[
             {
-                "label": "链接",
+                "label": "友情链接：",
                 "items": [
                     {
-                        "label": "网站使用 teedoc 生成",
-                        "url": "https://teedoc.neucrack.com",
+                        "label": "Renegade Project",
+                        "url": "https://renegade-project.tech/",
                         "target": "_blank"
                     },
                     {
-                        "label": "Copyright © 2021 Neucrack",
-                        "url": "https://neucrack.com",
+                        "label": "WOA-msmnile",
+                        "url": "https://github.com/woa-msmnile",
                         "target": "_blank"
                     },
                     {
-                        "label": "网站地图",
-                        "url": "/sitemap.xml"
+                        "label": "WOA Project",
+                        "url": "https://github.com/WOA-Project"
                     }
                 ]
             },
             {
-                "label": "源码",
+                "label": "开源地址：",
                 "items": [
                     {
-                        "label": "github",
-                        "url": "https://github.com/neutree/teedoc",
+                        "label": "Github",
+                        "url": "https://github.com/ACEyimo/easy-aToWin",
                         "target": "_blank"
                     },
                     {
-                        "label": "gitee",
-                        "url": "https://gitee.com/teedoc/teedoc",
+                        "label": "Gitee",
+                        "url": "https://gitee.com/ACEyimo/easy-aToWin",
                         "target": "_blank"
                     },
                     {
-                        "label": "本网站源文件",
-                        "url": "https://github.com/teedoc/teedoc.github.io",
+                        "label": "文档地址",
+                        "url": "https://github.com/aceyimo/easy-aToWin",
                         "target": "_blank"
                     }
                 ]
@@ -81,24 +81,14 @@
         ],
         "bottom": [
             {
-                "label": "渝ICP备19015320号",
-                "url": "https://beian.miit.gov.cn",
-                "target": "_blank"
+                "label": "Copyright © 2024 亦魔/Yemon",
+                "url": "#"
             },
             {
-                "label": "粤公网安备44030602004109号",
-                "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602004109",
-                "target": "_blank"
+                "label": "Bulid by teedoc",
+                "url": "https://teedoc.neucrack.com/"
             }
         ]
     },
-    "plugins": {
-        "teedoc-plugin-ad-hint": {
-            "config": {
-                "label": "☆",
-                "content": "这是一个支持国际化的消息示例</br>喜欢项目请<a target=\"_blank\" href=\"https://github.com/teedoc/teedoc\">点下 ☆ star </a>哦~🦀🦀"
-            }
-        }
-    },
-    "show_source": "编辑本页"
+    "show_source": false
 }
