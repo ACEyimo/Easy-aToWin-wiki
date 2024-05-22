@@ -1,0 +1,102 @@
+{
+    "site_name": "Easy-aToWin",
+    "site_slogon": "happy to write",
+    "site_root_url": "/",
+    "site_domain": "teedoc.neucrack.com",
+    "site_protocol": "https",
+    "config_template_dir": "config",
+    "source": "https://github.com/teedoc/teedoc.github.io/blob/main",
+    "route": {
+        "docs": {
+            "/get_started/zh/": "docs/get_started/zh",
+            "/develop/zh/": "docs/develop/zh",
+            "/download": "/docs/download/zh"
+        },
+        "pages": {
+            "/": "pages/index/zh"
+        },
+        "assets": {
+            "/static/": "static",
+            "/get_started/assets/": "docs/get_started/assets"
+        }
+    },
+    "translate": {
+        "docs": {
+            "/get_started/zh/": [ {
+                    "url": "/get_started/en/",
+                    "src": "docs/get_started/en"
+                }
+            ],
+            "/develop/zh/": [ {
+                    "url": "/develop/en/",
+                    "src": "docs/develop/en"
+                }
+            ],
+            "/download/": [ {
+                "url": "/download/en/",
+                "src": "docs/download/en"
+            }
+        ]
+        },
+        "pages": {
+            "/": [ {
+                    "url": "/en/",
+                    "src": "pages/index/en"
+                }
+            ]
+        }
+    },
+    "executable": {
+        "python": "python3",
+        "pip": "pip3"
+    },
+    "plugins": {
+        "teedoc-plugin-markdown-parser":{
+            "from": "pypi",
+            "config": {
+                "mathjax": {
+                    "enable": true
+                }
+                
+            }
+        },
+        "teedoc-plugin-jupyter-notebook-parser":{
+            "from": "pypi",
+            "config": {
+            }
+        },
+
+        "teedoc-plugin-theme-default":{
+            "from": "pypi",
+            "config": {
+                "dark": true,
+                "env":{
+                    "main_color": "#9933FA"
+                },
+                "show_print_page": false
+            },
+            "code_highlight_css":  "/static/css/prism.css",
+            "code_highlight_js": "/static/js/prism.js"
+        },
+        "teedoc-plugin-assets": {
+            "from": "pypi",
+            "config": {
+                "header_items": [
+                    "/static/css/custom.css"
+                ],
+                "footer_items": [
+                    "/static/js/custom.js"
+                ],
+                "env":{
+                    "main_color": "#2185D0",
+                    "second_color": "#2185D0"
+                }
+            }
+        }
+    },
+    "rebuild_changes_delay": 1,
+    "robots":{
+        "User-agent": "*"
+    },
+    "layout_root_dir": "layout"
+}
