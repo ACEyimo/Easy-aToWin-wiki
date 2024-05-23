@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>亦魔的作业3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 42px;
+            text-align: center;
+        }
+
+        #div {
+            margin: 0px auto;
+            width: 600px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid black;
+        }
+        table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr {
+            padding: 0;
+            width: 600px;
+            position: relative;
+
+        }
+        td {
+            padding: 0;
+        }
+
+        .number {
+            width: 120px;
+        }
+
+        .name {
+            width: 300px;
+        }
+
+        .grades {
+            width: 180px;
+        }
+
+        input.name, input.grades {
+            height: 42px;
+            appearance: none;
+            border: none;
+        }
+        input.name:focus, input.grades:focus {
+            outline: none;
+        }
+        .buttoninput {
+            height: 52px;
+            width: 100px;
+        }
+        button {
+            padding: 5px;
+            margin: 5px;
+            border: 0px;
+            background-color: #0df;
+        }
+        button:hover {
+            background-color: #0ff;
+        }
+        button:focus {
+            background-color: #09f;
+        }
+
+        .scores-title {
+            width: 220px;
+        }
+        .scores-content {
+            width: 380px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div">
+        <table id="students">
+            <caption>学生成绩</caption>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>成绩</th>
+            </tr>
+            <tr>
+                <td class="number">1</td>
+                <td><input class="name" type="text" maxlength="6" placeholder="张三"></td>
+                <td><input class="grades" type="number" min="-999" max="999.99" placeholder="999.99"></td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td><input class="name" type="text" maxlength="6" placeholder="李四"></td>
+                <td><input class="grades" type="number" min="-1" max="999.99" placeholder="-1"></td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td><input class="name" type="text" maxlength="6" placeholder="王五"></td>
+                <td><input class="grades" type="number" min="-1" max="999.99"></td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td><input class="name" type="text" maxlength="6" placeholder="刘六"></td>
+                <td><input class="grades" type="number" min="-1" max="999.99"></td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td><input class="name" type="text" maxlength="6" placeholder="陈七"></td>
+                <td><input class="grades" type="number" min="-1" max="999.99"></td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td><input class="name" type="text" maxlength="6" placeholder="杨八"></td>
+                <td><input class="grades" type="number" min="-1" max="999.99"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input class="buttoninput" type="number" maxlength="3" step="1" placeholder="1">
+                    <button type="button" onclick="addStudents()">添加学生</button>|
+                    <button type="button" onclick="delStudents()">删除学生</button>
+                    <br>
+                    <input class="buttoninput" type="number" maxlength="1" step="1" placeholder="1"> -
+                    <input class="buttoninput" type="number" maxlength="1" step="1" placeholder="all">
+                    <button type="button" onclick="resetInput('grades'); resetInput('name')">清除</button>|                    
+                    <button type="button" onclick="userInput('name')">提交表单</button>
+                </td>
+            </tr>
+        </table>
+
+        <hr style="border: 2px solid red; width: 80%;">
+
+        <table id="scores">
+            <tr>
+                <td class="scores-title">学生人数</td>
+                <td class="scores-content">123</td>
+            </tr
+            <tr>
+                <td class="scores-title">成绩总分</td>
+                <td class="scores-content">123</td>
+            </tr>
+            <tr>
+                <td class="scores-title">平均分数</td>
+                <td class="scores-content">123</td>
+            </tr>
+            <tr>
+                <td class="scores-title">最优学生</td>
+                <td class="scores-content" style="font-size: 24px;">恭喜诸葛孔明刘秀考了300.22分</td>
+            </tr>
+            <tr>
+                <td class="scores-title">最差得分</td>
+                <td class="scores-content" style="font-size: 20px;">诸葛孔明刘秀以<b style="font-size: 20px;">320.01</b>分荣获<b style="font-size: 20px; color: red;">倒数第一</b></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div id="log">
+
+    </div>
+    <script>
+         var students = document.getElementsByClassName("number").length;
+         console.log("class 为 'number' 的元素个数为：" + students);
+    
+        function userInput(inputClass) { //获取所有class为参数inputClass的内容
+            let input = document.getElementsByClassName(inputClass);
+            let output = [];
+            for (let i=0; i < input.length; i++){ //遍历取值
+                output.push(input[i].value);
+            }
+            // console.log(output);
+            return output;
+        }
+        function sumInputRows(x){ //计算按钮栏的输入内容是否合法
+            let resetRows = userInput('buttoninput')[x];
+            if (Number(x) !== 0 && Number(x) !== 1 && Number(x) !== 2){
+                console.log('函数sumInputRows只接受0、1和2的参数');
+                return;
+            }
+            if (!isNaN(resetRows)){
+                if (resetRows == ''){
+                    // console.log('空值返回1');
+                    return 1;
+                } else if (Number.isInteger(Number(resetRows)) && Number(resetRows) > 0) {
+                     //console.log(resetRows + '是一个大于0的正整数');
+                    return Number(resetRows);
+                } else {
+                    // console.log(resetRows + '不是大于0的正整数');
+                    alert('请输入一个大于0的正整数');
+                    return 0;
+                }
+            } else {
+                // console.log(resetRows + '不是一个合法数值');
+                alert('非法数值，请输入一个大于0的正整数');
+                return 0;
+            }
+
+        }
+
+        function addStudentRow(){ //添加一行
+            let studentRows = document.getElementById('students'); //选中id为students的标签
+            let newRow = studentRows.insertRow(studentRows.rows.length - 1); //选中倒数第二行（因为末行是按钮）
+            // 插入三个新的单元格
+            let newTd1 = newRow.insertCell(0);
+            let newTd2 = newRow.insertCell(1);
+            let newTd3 = newRow.insertCell(2);
+            // 为新的单元格添加属性和内容
+            newTd1.classList.add('number')
+            newTd1.innerHTML = ++students
+            newTd2.innerHTML = '<input class="name" type="text" maxlength="6" placeholder="">'
+            newTd3.innerHTML = '<input class="grades" type="number" min="-1" max="999.99">'
+        }
+        function addStudents() { // 添加多行，这块函数比较简单，就不加注释了
+            const input = sumInputRows(0);
+            if ((students + input) <=999 ){
+                for (let i = 0; i < input; i++){
+                addStudentRow();
+                }
+            } else {
+                alert('您的学生真多！\n请输入总学生数小于999的数值')
+                document.getElementsByClassName('buttoninput')[0].value = ''; //清除输入的非法数值
+            }
+        }
+
+        function delStudents() { //删除多行
+            const input = sumInputRows(0);
+            if (input < students && input != 0) {
+                for (let i = 0; i < input; i++) {
+                    let studentRows = document.getElementById('students');
+                    let delRow = studentRows.rows.length - 2;
+                    studentRows.deleteRow(delRow);
+                    students--;
+                }
+            } else if(input == students) {
+                alert('难道你一个学生也没有吗？请输入小于学生总数的人数！');
+            } else if(input > students) {
+                alert('你欠我' + (input-students) + '个学生，请输入小于学生总数的人数！')
+            }
+        }
+
+        function resetInput(inputClass) { //清除
+            let input = document.getElementsByClassName(inputClass);
+            let startRow = sumInputRows(1);
+            let endRow = userInput('buttoninput')[2];
+            if (endRow == '') {
+                endRow = students;
+            } else {
+                endRow = sumInputRows(2);
+            }
+            if (endRow == 0) {
+                return;
+            }
+            if (endRow >= startRow && endRow <= students && startRow > 0)  {
+                for (let i = (startRow - 1); i < endRow; i++) {
+                    console.log('这是'+ inputClass + '且执行了清除循环');
+                    input[i].value = '';
+                }
+            } else {
+                alert('清除的终点行必须大于起始行且小于总行数！')
+                console.log('这是'+ inputClass + '');
+                document.getElementsByClassName('buttoninput')[2].value = '没有执行循环';
+            }
+        }
+
+         /*function statStudentsGrades() {
+            let input = userInput('grades');
+            let output = [];
+            let max = [];
+            let min = [];
+            let error;
+            for (i = 0;i < input; i++){
+                let inputToNumber = Number(input[i]);
+                let inputToStr = inputToNumber.toString(); //解决以.和+等符号开头导致的问题
+
+                if (inputToNumber >= 0 || inputToNumber <= 1000 || a == -1){ //判断是不是非法数值，如果是直接跳出
+                    alert('学生成绩请输入-1和0~999.99(小数点最多两位)的合法数值！\n第一个非法数值在第' + (i+1) +'行处')
+                    document.getElementsByClassName('grades')[i].value = '';
+                    document.getElementsByClassName('grades')[i].placeholder = inputToStr;
+                    // 本来还想写跳转到指定行的，懒得写了
+                    return;
+                }
+
+                if (inputToNumber > 0 && !isNAN(inputToNumber)) { //先判断是不是合法的正数
+                    if (Number.isInteger(inputToNumber)) { //再判断是不是正整数
+                        output.push(inputToNumber * 1000); //是整数直接添加到数组中
+                        //因为js的浮点运算缺失精度，所以将输入的字符统一转换成整数后再计算
+                    } else if () { //如果不是正整数肯定是正浮数判断是不是两位小数以内
+
+                    }
+                }
+            }
+
+        }*/
+    </script>
+</body>
+
+</html>
