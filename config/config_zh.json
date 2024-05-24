@@ -9,7 +9,7 @@
         "home_url": "/",
         "items": [
             {
-                "url": "/get_started/zh/",
+                "url": "/user/zh/",
                 "label": "开始使用",
                 "position": "left"
             },
@@ -19,7 +19,8 @@
                 "position": "left"
             },
             {
-                "url": "/download/zh/",
+                "url": "/user/zh/usage/download/res.md",
+                "target": "_blank",
                 "label": "下载",
                 "position": "left"
             },

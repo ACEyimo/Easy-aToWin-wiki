@@ -9,7 +9,7 @@
         "home_url": "/",
         "items": [
             {
-                "url": "/get_started/en/",
+                "url": "/user/en/",
                 "label": "Getting Started",
                 "position": "left"
             },
@@ -19,7 +19,8 @@
                 "position": "left"
             },
             {
-                "url": "/download/en/",
+                "url": "/user/en/usage/download/res.md",
+                "target": "_blank",
                 "label": "Download",
                 "position": "left"
             },

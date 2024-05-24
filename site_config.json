@@ -8,35 +8,29 @@
     "source": "https://github.com/ACEyimo/Easy-aToWin-wiki",
     "route": {
         "docs": {
-            "/get_started/zh/": "docs/get_started/zh",
-            "/develop/zh/": "docs/develop/zh",
-            "/download": "/docs/download/zh"
+            "/user/zh/": "docs/user/zh",
+            "/develop/zh/": "docs/develop/zh"
         },
         "pages": {
             "/": "pages/index/zh"
         },
         "assets": {
             "/static/": "static",
-            "/get_started/assets/": "docs/get_started/assets"
+            "/user/assets/": "docs/user/assets"
         }
     },
     "translate": {
         "docs": {
-            "/get_started/zh/": [ {
-                    "url": "/get_started/en/",
-                    "src": "docs/get_started/en"
+            "/user/zh/": [ {
+                    "url": "/user/en/",
+                    "src": "docs/user/en"
                 }
             ],
             "/develop/zh/": [ {
                     "url": "/develop/en/",
                     "src": "docs/develop/en"
                 }
-            ],
-            "/download/": [ {
-                "url": "/download/en/",
-                "src": "docs/download/en"
-            }
-        ]
+            ]
         },
         "pages": {
             "/": [ {

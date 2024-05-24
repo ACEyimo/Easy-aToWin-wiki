@@ -18,7 +18,7 @@ items:
         file: usage/download/github.md
     -   label: 下载已发布的包
         target: _blank
-    -   file: usage/download/res.md
+        file: usage/download/res.md
     -   label: 制作Windows镜像
         target: _blank
         file: usage/download/win.md
@@ -37,8 +37,8 @@ items:
         -   label: 一加5T
             file: device/oneplus5T.md
 -   label: 错误码查询
-    file: more/error.md
+    file: uasge/other/error.md
 -   label: 更新日志
-    file: more/update.md
+    file: ussge/other/update.md
 -   label: 其他
     file: more/README.md

@@ -1,86 +1,254 @@
 ---
-title: open source static doc site generator teedoc
-keywords: teedoc, markdown, jupyter notebook, html, document generation, alternative gitbook, website generation, static website, static blog
-desc: teedoc, open source static doc site generator, convert markdown or jupyter notbook into html static web pages, used for personal or corporate website building, blog building, database building, wiki, etc.
+title: Easy-aToWin 简介
+keywords: Easy-aToWin, Android, Windows, 刷机包, Windows刷机包, 安卓刷机包,  Windows11, Windows10, Windows 11 arm, Windows 10 arm, 安卓刷Windows, 小米刷Windows, 一加刷Windows, 红米刷Windows, 亦魔
+desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows的刷机包
+---
+>此文档是ReadMe.md的简体中文版，无需重复阅读
+
+----
+
+大约两年之前（2022）就想做了，也完成了一小部分。
+但当时项目官方不支持这种“傻瓜式操作”，且有一个恶意收费的“蛋”在，加上有两个问题难以解决，于是搁浅了。  
+现在项目热度过去了，突然心血来潮就做出来了。
+然后做的时候发现，小太阳ACA在很久之前就做过刷机包且把问题给解决了。
+
 ---
 
+<center><b>
+注：刷机包依赖文件名，请严格按照规则命名！！<br>
+注：刷机包依赖文件名，请严格按照规则命名！！<br>
+注：刷机包依赖文件名，请严格按照规则命名！！<br>
+</b></center>
 
-Official website: [teedoc.neucrack.com](https://teedoc.neucrack.com/) or [teedoc.github.io](https://teedoc.github.io/)
-Source file of this document: [github.com/teedoc/teedoc.github.io](https://github.com/teedoc/teedoc.github.io)
-Source code: [https://github.com/teedoc/teedoc](https://github.com/teedoc/teedoc) Welcome star
+---
 
-Convert documents in `Markdown` or `Jupyter Notebook` format into `HTML` static web pages
+## 使用方法：
+1. 刷入part包（分区包）
+   - 重启到Recovery
+   - 格式化data分区
+   - 重启到系统（这一步很重要）
+2. 重启到Recovery
+3. 备份boot分区
+4. 刷入flash包（刷写包）
+5. 重启，然后享受
 
-`teedoc` can be used in the following scenarios:
-* Build a document website, and it is best to support multiple documents (for example, you have two books called `Python Learning` and `C++ Learning`, they have separate directories, and `teedoc` is the library)
-* Documents and web pages coexist, support custom `HTML` pages
-* Build a `WiKi` website
-* Build a personal or corporate knowledge base
-* Build a personal or corporate website
-* Blog
+### 其他说明：
++ 刷完刷写包后，会向/sdcard/下发送一个当前分区（boot_a或boot_b）的备份，用于以后使用。  
++ 恢复分区包还没写，建议提前分别备份好win和安卓的boot镜像。  
++ 如果你想要换win系统，先恢复安卓boot镜像，再刷一遍刷写包即可。  
++ 如果你想要更换安卓系统，需要先备份win boot镜像，后刷入安卓，最后恢复win boot即可。
++ 当然你也可以在刷入分区包后，先刷你想要的安卓系统，再执行刷写包。
 
-If you encounter problems during use, you can find similar problems in [here](https://github.com/teedoc/teedoc/issues) (you need to register and log in to github) to find similar issues, or create an issue
+>注：**`请严格按照以上步骤执行`**  
+以下内容包含对刷机包的**详细说明，务必仔细阅读**。  
+最后一栏是**此机型**的使用指南及**特殊说明**，不同机型有不同内容，留空则表示此机型无特殊性。
+
+---
+
+## update-binary 版本说明：<br>例如：A.bc20240423
+- A : 只有代码重构或大更新时才会变动
+- b : 功能更新时会变动
+- c : bug修复和局部代码逻辑优化会变动
+- 20240423: 最后一次编辑时间
+
+## 文件名以“-”符号分割，共有五个属性：
+<center>
+<b><span style="color:blue">类型</span>-<span style="color:red">型号</span>-<span style="color:green">输入值</span>-<span style="color:orange">占位符</span>-<span style="color:purple">版本</span>.zip</b><br>
+<span style="color:blue">part</span>-<span style="color:red">enchilada</span>-<span style="color:green">auto</span>-<span style="color:orange">null</span>-<span style="color:purple">beta1.4</span>.zip</center>
+<span style="color:blue">flash</span>-<span style="color:red">enchilada</span>-<span style="color:green">Win11_23H3_v2.0rc2</span>-<span style="color:orange">null</span>-<span style="color:purple">beta1.4</span>.zip
+
+---
+
+1. “类型”标识刷机包类型。不能修改，会报错  
+
+2. “型号”指定手机型号，不能修改，会报错  
+
+3. “输入值”是刷机包根据输入内容进行调整的属性，可修改：
+   + 分区包：用于设定Win分区大小
+   + 刷写包：用于查找Windows镜像
+   + 恢复包：设置恢复分区的模式
+
+4. “占位符”会根据部分机型的特殊性执行特殊操作。默认为"null"，不可留空  
+
+5. “版本”顾名思义，部分代码会使用此值，不推荐修改  
+
+>注意：包括但不限于刷机包报错、手机成砖、基带丢失等
+
+### 分区包输入值说明：
+   + auto：根据手机容量自动分配Win分区大小：
+      - 64GB手机：Win分区大小为38GB
+      - 128GB：70GB
+      - 256GB：120GB
+      - 512GB：240GB
+      - ≥512GB：480GB
+   + 整数（G/gb）：手动指定Win分区大小，示例为“128Gb”。要求：
+      - 数值不能小于38G。
+      - 计算后手机剩余空间必须保留19G以上。
+
+#### 注意事项：
++ 对于容量超过256GB的设备，推荐手动设定Win分区大小。
++ 自定义容量不区分大小写，单位可省略。
+
+### 刷写包输入值说明：
+#### 值为Win镜像文件名。系统将按以下顺序在指定路径查找匹配文件：
+1. U盘：`/usbstore/`
+2. 内置储存：`/sdcrad/`
+3. 下载目录：`/sdcard/Download/`
+#### 查找规则：
++ 查找以`输入值`开头，`.wim`结尾的**首个文件**。
++ 如未找到，继续按路径顺序查找以`.mtip`结尾的**首个文件**。
+
+`.mtip`是 某贼 Mindows工具的懒人包命名方案，这里指**全量包**。  
+全量包的意思是，已包含了完成系统安装后的状态，即“已经进过系统”的镜像。无需经历常规安装后的系统初始化、驱动安装等步骤。  
+相较于原版镜像能大幅减少安装问题（如蓝屏），显著缩短耗时。但可能预装特定软件，更改了系统设置等情况。  
+如果你打算使用全量包，“输入值”无需修改。
+
+## 流程及进度：
+1. 验证机型 √
+2. 验证刷机包 √
+3. 验证分区 - 70%（部分功能待添加）
+   - 分区包：
+      + 验证是否官方分区 - 50%
+      + 验证分区大小是否正确 - 50%
+   - 刷写包：
+      + 验证win和esp分区是否存在 √
+      + 验证分区大小是否正确 - 50%
+4. 执行操作 √
+   - 分区包：
+      + 缩小userdata分区 √
+      + 创建esp和win分区 √
+   - 刷写包：
+      + 安装win镜像和引导文件 √
+      + 备份安卓boot并刷入UEFI boot √
+   - 恢复包：
+      + default：只删除esp和win分区，扩大userdata分区 √
+      + auto：删除userdata及以后分区，重建userdata分区 √
+      + sgdisk：以指定的sgdisk备份恢复分区 √
+5. 其他 - 25%
+   - 读写配置 - 50%（未启用）
+   - 输出日志 ×
+   - 对UEFI引导配置文件进行修改 ×
+   - 其他还没想到 ×
+6. 完成
+
+## 错误代码：
+10 自定义函数判断两者不一致  
+11 手机代号跟预设值不一致  
+12 刷机包名称不合法  
+  
+20 获取分区信息错误  
+21 设置分区时包含了浮点数  
+22 设定的分区容量大于限制  
+  
+31 执行缩小分区时失败  
+32 创建esp分区失败  
+33 创建win分区失败  
+34 设置esp分区启动标签失败  
+  
+41 没有找到win数据包  
+42 发送esp引导文件失败  
+43 安装win数据包失败  
+  
+50 挂载esp分区失败  
+51 备份分区失败  
+52 刷入镜像失败  
+  
+下列错误码所需要的代码暂未启用  
+60 配置项不存在  
+61 配置文件不存在  
+62 读取到的配置值为空  
+
+70 恢复分区包输入值非法  
+71 default删除esp或win分区失败  
+72 default扩大userdata分区时失败  
+75 auto删除多余分区时失败  
+76 auto删除userdata分区时失败  
+77 auto创建userdata分区时失败  
+78 sgdisk获取手机大小失败  
+79 sgdisk恢复分区时失败（可能文件不存在）  
+
+## 一加6/6T 使用指南及特殊说明：
+> 仅在一加6 氢10、氧11系统测试，其他版本未测，建议使用 **OxygenOS 10/11** 系统。  
+务必确保 A、B 分区刷入相同安卓系统、TWRP 及 root。若不确定，先复刷一次。  
+一加6T未经测试，理论上两者通用。
+
+### 如果你是氢系统，刷入分区包后会出现中文字体缺失及内置储存不可用。这是因为系统对 data 分区加密所致
+#### 解决方案一：
+   - 在 TWRP 中刷入当前系统全量包，使用官方 REC 执行“格式化设备”
+   - 全量包获取：访问[阿木大侠云盘](https://yun.daxiaamu.com/OnePlus_Roms)
+#### 解决方案二：
+   - 直接使用**氧系统**，此系统无data加密，但分区后会缺少预装软件（包括浏览器）
+   - 可通过分区包的第四个属性设为 "via"，会自动发送Via浏览器至系统分区（ab都会发一遍）
+   - 但是我发现一个bug，切换到其他分区时via不可用，懒得解决能用就行
+
+### 其他说明：
+#### 一加6极其容易蓝屏，建议直接使用全量包
+
+在启动windows模式下，点击`UEFI Boot Menu`，拉到最底部点击`Reboot to other slot`选项会重启到第二分区（boot_a或_b）  
+重启后可进入第二分区的安卓，如果想再切换到windows在twrp里切换分区就可以了  
+最终的状态是一个boot分区为启动windows，另外一个启动安卓。
+
+---
+## 作者的话：
+本来想对刷机包进行加密和验证，然后初期收费的，原因是：  
++ 防止如之前“蛋”这种人恶意售卖。
++ 回收设备资金以支持其他机型更新。
++ 付费用户通常更积极参与反馈与建议。
+
+原定计划是设备花费回笼和刷机包稳定后改成免费发布，
+但是想了想，似乎没必要。毕竟手机刷win的热度都过去了。
+而且项目的众多维护者付出远比我多得多，收获却很少，
+我再去收费，反而寒了那些用爱发电的项目维护者。
+
+**所以痛定思痛，把刷机包完全公开，且永不收费！！**  
+当然这会迎来一些新的问题，比如我维护欲望会变低，可能因为资金问题不再滚动更新其他机型等等。  
+所以，原设想的情况不变：
+初期仍接受捐赠和各位的积极测试，欢迎进群反馈：172952046（QQ没事儿别加哈），
+外国友人如果发现bug和提建议，可以发送邮件到 ACEyimo@qq.com   
+`如果你是学生党或条件困难无力捐赠，我的要求不多，给我B站视频点赞投币，这并不过分。`
+
+> 目前一加6的设备费总共花费373元（一加6无拆修主板坏 200元，8+128原装主板 150元，原装拆机电池 23元） 
+> 设备费用完全回收后，只接受无条件捐赠，部分捐赠会转赠项目维护者，一部分留下来买辣条  
+> 若一个月内未收回成本，也仅接受无条件捐赠，且几乎停止维护与新机型推出。
+
+如果让我维护其他机型，可以提供设备供我研究测试，
+需自行承担运费与风险，归还时无法保证设备状态。
+
+**如果发现有人使用我的代码还收费的，请及时通知我。
+务必谴责此类行为，提醒他人本包免费，谨防上的受骗。**
 
 
-## Features
-
-- [x] Multi-document support
-- [x] Simple to use, cross-platform, only dependent on `Python3`
-- [x] No database required, all static pages of the website
-- [x] The deployment is simple, the generated website is a fully static page, which can be directly copied to the server or uploaded to a third party organization for deployment
-- [x] Easy to write, using [Markdown syntax](./syntax/syntax_markdown.md)编写
-- [x] [Jupyter notebook support]((./syntax/syntax_jupyter.ipynb))
-- [x] HTML support, you can directly use HTML to write pages, with great freedom
-- [x] Plug-in support
-- [x] Multi-theme support (implemented by plug-in)
-- [x] Control the style accurate to the page through css (implemented by customizing the id and class of each page)
-- [x] Multi-level directory support(infinite levels)
-- [x] Multi-language support (manual translation) (Internationalization/i18n)
-- [x] Multilingual support (translation plugin)
-- [x] Multi-version support (implementation method is the same as multi-language)
-- [x] Search support
-- [x] SEO friendly
-- [x] Real-time preview of changes
-- [x] Parallel build, faster build speed
-- [x] Blog support
-- [x] Switch from gitbook is easy, just config `route` and convert `SUMMARY.md` by `summary2yaml` command
-- [x] Comments(Plugins), e.g. `gitalk`
-
-
-## Demo
-
-[This website](https://teedoc.github.io/) is generated using `teedoc`, what you see now is what the generated website looks like.
-
-In addition, there are other websites that use `teedoc`, please see [here](./usage/sites.md) for details
-
-
-## Similar tools
-
-In fact, there are many tools of this type, but each one is slightly different. Just choose one according to your needs.
-
-If you have choice difficulties, you are recommended to use teedoc if you meet some of the following conditions:
-* Used as a document website? You have a lot of document sites in your hand, want to unify them into one site? Also websites in various languages? Use `teedoc`
-* Use `Jupyter notebook` to write documents or code? Decisively choose teedoc
-* Does the function meet your needs?
-* Does the interface meet your aesthetics (you can customize `css`, or change the theme plug-in)
-* Familiar with `Python`? Plug-ins and functions can be customized at any time
-
-Other similar tools:
-* `docusaurus`: `teedoc`'s `UI` layout is almost similar to it, but it is written by `ract`, `teedoc` is native `js`, if you are using `ract`, you can consider this
-* `gitbook`: a tool that used to be very useful, but it is no longer maintained by the government, and it is switched to commercial use. It is not recommended to use it
-* `docsify`: only one page is needed, `markdown` is rendered in the browser, instead of pre-rendered as `HTML`, the advantage is that it is lightweight, but `SEO` is not very friendly, you can use its `SSR` function, ` nodejs` written
-* `readthedocs(Sphinx)`: In fact, it uses `Sphinx` as a generation tool. The official website documentation of `Python` is generated by this tool. Many open source projects use tools. `readthedocs` is just a public document website. You don’t need to build your own website, you can start writing documents after registering and logging in, and it is friendly to `RST` format support
-* `mkdoc`: It is also a tool written by `python`. It is easy to use and has many plugins. If your document is a single language document, you can use this tool
-
-
-## Some usage suggestions
-
-* Add `Generate with teedoc` in footer to help more people discover teedoc and promote the growth of the project
-* Use the template project to start a new document project, you can run it first, and then modify it according to your own needs, so that you can get started faster
 
 
 
-## Quick start
 
-Visit[quick start](./usage/quick_start.md) to install and quick start
 
+reset-model-default-null-beta1.0.zip
+类型-型号-模式-恢复boot-版本.zip
+
+模式
+    default
+        应用于刷机包本身（只删除esp和win然后扩大userdatata）
+    auto
+        从userdata开始删除到最后一个分区，然后重建data
+    sgdisk
+        恢复备份的sgdisk分区表
+
+恢复boot
+    yes
+        恢复boot
+    no 或者 null
+        不恢复boot
+    其他：yes_modem
+        恢复boot以及modem
+
+
+更新日志：
+   A.aa202404??
+      初代版本，完善了大部分功能
+   A.ab202404??
+      修复几个可能出现导致刷机包不可用的bug
+   A.bb20240423
+      增加了写入和读取配置函数
+   A.bc20240514
+      修复了无法发送备份文件到sdcard的bug
