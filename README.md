@@ -1,7 +1,7 @@
-teedoc official website
+# Easy-aToWin official website
 =====
 
-visit: [teedoc.neucrack.com](https://teedoc.neucrack.com/) or [teedoc.github.io](https://teedoc.github.io)
+visit: [Easy-aToWin.ACEyimo.cn](https://Easy-aToWin.ACEyimo.cn) or [ACEyimo.github.io](https://ACEyimo.github.io)
 
 
 ## build locally
