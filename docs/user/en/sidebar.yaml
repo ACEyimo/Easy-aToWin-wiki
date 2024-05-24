@@ -1,0 +1,44 @@
+items:
+-   label: Easy-aToWin 简介
+    file: README.md
+-   label: 食用方法
+    collapsed: false
+    items:
+        -   label: 快速开始
+            file: usage/README.md
+        -   label: 文件名
+            file: usage/filename.md
+        -   label: 流程与进度
+            file: usage/flow.md
+-   label: 下载与构建
+    collapsed: false
+    items:
+    -   label: 从gayhub构建
+        target: _blank
+        file: usage/download/github.md
+    -   label: 下载已发布的包
+        target: _blank
+    -   file: usage/download/res.md
+    -   label: 制作Windows镜像
+        target: _blank
+        file: usage/download/win.md
+-   label: 设备特殊性
+    items:
+    -   label: 小米
+        items:
+        -   label: 小米8
+            file: device/mi8.md
+        -   label: 红米K20pro
+            file: device/k20pro.md
+    -   label: 一加
+        items:
+        -   label: 一加5
+            file: device/oneplus5.md
+        -   label: 一加5T
+            file: device/oneplus5T.md
+-   label: 错误码查询
+    file: more/error.md
+-   label: 更新日志
+    file: more/update.md
+-   label: 其他
+    file: more/README.md
