@@ -10,6 +10,7 @@ desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows
 或者，你也可以用git克隆仓库到本地：
 ```sh
 git clone https://github.com/ACEyimo/Easy-aToWin.git
+cd Easy-aToWin && chmod +x make.sh
 ```
 ## 安装依赖
 刷机包的制作需要7zip，请根据你的系统安装。
@@ -22,11 +23,18 @@ termux：
 pkg install p7zip
 ```
 ## 生成刷机包
+`./make.sh 手机代号`
+命令执行完成后会在`out/手机型号/`目录下生成刷机包
+以一加6为例：
 ```sh
-cd Easy-aToWin && chmod +x make.sh
-# ./make.sh 手机代号 指定update-binary版本
-# 第二参数可留空，默认使用updata-binary/new.sh
-./make.sh enchilada A.bc20240514
+./make.sh enchilada
 ```
+可选项：`-o 输出指定的包`
+默认值all，可选参数（part/flash/reset）
+示例，此命令结束后会在`out/手机型号/`下生成`分区包`：
+```sh
+./make.sh enchilada -o part
+```
+
 ## 使用
-执行完成后，会在`out`文件夹生成三个包，按照[文件名说明](../filename.md)更改。
+执行完成后，会在`out/手机型号/`文件夹生成三个包，按照[文件名说明](../filename.md)更改。然后刷入即可

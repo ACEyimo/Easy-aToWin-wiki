@@ -6,7 +6,7 @@ items:
     items:
         -   label: 快速开始
             file: usage/README.md
-        -   label: 文件名
+        -   label: 文件说明
             file: usage/filename.md
         -   label: 流程与进度
             file: usage/flow.md
