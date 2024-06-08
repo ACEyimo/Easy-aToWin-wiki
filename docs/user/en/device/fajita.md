@@ -1,15 +1,17 @@
 ---
-title: 一加6 特殊说明
+title: 一加6T 特殊说明
 keywords: Easy-aToWin, Android, Windows, 刷机包, Windows刷机包, 安卓刷机包,  Windows11, Windows10, Windows 11 arm, Windows 10 arm, 安卓刷Windows, 小米刷Windows, 一加刷Windows, 红米刷Windows, 亦魔
 desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows的刷机包
 ---
+>! 未在一加6T进行测试，因为没有手机，刷机包和文档一律**照搬一加6**。理论两者通用，如有问题欢迎反馈
 
 >一加6经常在WIndows安装过程中出现高通崩溃模式，推荐使用某贼的懒人包：`一加6懒人包Win11_22621.2265.230822_by某贼.mtip`，可极大程度避免此现象发生。
 > 分区完成后，会出现中文字体缺失及内置储存不可用。这是因为氢系统对`userdata`分区加密所致。无法直接解决，只提供一个折中方案。
 
 
 ## 下载镜像
-[移动云盘](链接:https://caiyun.139.com/m/i?1N5BTrmYVrgDh)提取码：**OLnL**
+PS：这个是一加6T的
+[移动云盘](https://caiyun.139.com/m/i?1N5BTXr09n9uZ)提取码：**Adbo**
 
 ---
 

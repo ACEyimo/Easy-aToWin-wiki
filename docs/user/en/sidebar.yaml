@@ -1,44 +1,45 @@
 items:
--   label: Easy-aToWin 简介
+-   label: Introduction to Easy-aToWin
     file: README.md
--   label: 食用方法
+-   label: Baisc usage
     collapsed: false
     items:
-        -   label: 快速开始
+        -   label: Quick start
             file: usage/README.md
-        -   label: 文件说明
+        -   label: Flie Name specification
             file: usage/filename.md
-        -   label: 流程与进度
+        -   label: Workflow and Progress
             file: usage/flow.md
--   label: 下载与构建
+-   label: Download and Build
     collapsed: false
     items:
-    -   label: 从gayhub构建
+    -   label: Bulid from Github
         target: _blank
         file: usage/download/github.md
-    -   label: 下载已发布的包
+    -   label: Download in Released
         target: _blank
-        file: usage/download/res.md
-    -   label: 制作Windows镜像
+        file: usage/download/README.md
+    -   label: Make Windows image
         target: _blank
         file: usage/download/win.md
--   label: 设备特殊性
+-   label: Device Exclusive & Supported list
+    file: device/README.md
     items:
-    -   label: 小米
+    -   label: XiaoMi
         items:
-        -   label: 小米8
-            file: device/mi8.md
-        -   label: 红米K20pro
-            file: device/k20pro.md
-    -   label: 一加
+        -   label: Xiaomi Mix2s(polaris)
+            file: device/polaris.md
+        -   label: Redmi K20pro(raphael)
+            file: device/raphael.md
+    -   label: OnePlus
         items:
-        -   label: 一加5
-            file: device/oneplus5.md
-        -   label: 一加5T
-            file: device/oneplus5T.md
--   label: 错误码查询
-    file: uasge/other/error.md
--   label: 更新日志
-    file: ussge/other/update.md
--   label: 其他
+        -   label: OnePlus 6(enchilada)
+            file: device/enchilada.md
+        -   label: Oneplus 6T(fajita)
+            file: device/fajita.md
+-   label: Query error
+    file: more/error.md
+-   label: Update log
+    file: more/update.md
+-   label: more
     file: more/README.md

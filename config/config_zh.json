@@ -19,7 +19,7 @@
                 "position": "left"
             },
             {
-                "url": "/user/zh/usage/download/res.md",
+                "url": "/user/zh/usage/download/",
                 "target": "_blank",
                 "label": "下载",
                 "position": "left"
@@ -64,17 +64,17 @@
                 "items": [
                     {
                         "label": "Github",
-                        "url": "https://github.com/ACEyimo/easy-aToWin",
+                        "url": "https://github.com/ACEyimo/Easy-aToWin",
                         "target": "_blank"
                     },
                     {
                         "label": "Gitee",
-                        "url": "https://gitee.com/ACEyimo/easy-aToWin",
+                        "url": "https://gitee.com/ACEyimo/Easy-aToWin",
                         "target": "_blank"
                     },
                     {
                         "label": "文档地址",
-                        "url": "https://github.com/aceyimo/easy-aToWin",
+                        "url": "https://github.com/aceyimo/Easy-aToWin",
                         "target": "_blank"
                     }
                 ]

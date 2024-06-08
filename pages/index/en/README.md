@@ -1,7 +1,7 @@
 ---
-title: open source static doc site generator
-keywords: teedoc, markdown, jupyter notebook, html, document generation, alternative gitbook, website generation, static website, document website generation, multiple documents
-desc: teedoc, open source static doc site generator, convert markdown or jupyter notbook into html static webpage
+title: Easy form Android to Windows
+keywords: Easy-aToWin, Android, Windows, Flashable ZIP, Windows Flashable ZIP, Android ROMs,  Windows11, Windows10, Windows 11 arm, Windows 10 arm, Android to Windows, Xiaomi Flash Windows, Oneplus Flash Windows, Radmi flash Windows, Yemon
+desc: Easy-aToWin, Easy Android to Windows, Flashable ZIPs to convert SDM 845/855 devices from Android to Windows
 id: home_page
 ---
 
@@ -14,102 +14,58 @@ id: home_page
 <div id="fullpage">
     <div class="section" style="height: 100vh;">
         <div>
-            <h1><span>teedoc</span></h1>
-            <h3>Concise and comprehensive website/document generator</h3>
+            <h1><span>Easy-aToWin</span></h1>
+            <h3>Flashable ZIPs to convert SDM 845/855 devices from Android to Windows</h3>
+            test text
         </div>
         <div class="big_btn_wrapper">
             <div class="big_btn">
                 <a href="#" id="learn_more">Learn More</a>
             </div>
             <div class="big_btn">
-                <a href="/get_started/en/">Get started</a>
+                <a href="/user/zh/">Get Started</a>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
             <div class="dsc_left">
-                <h2>Write easily</h2>
-                <h2>Automatically generate</h2>
+                <h2>Say goodbye to hassle</h2>
+                <h2>No need PC</h2>
+                <h2>Simple and swift</h2>
             </div>
             <div class="dsc_right">
-                Write with <img class="logo" src="/static/image/markdown.svg"> Markdown Or <img class="logo" src="/static/image/jupyter.svg">jupyter notebook ,</br>
-                automatically generate HTML pages
+                <h3>Just two steps</h3>
+                Partition --> flashed
+                <h3>Enjoy</h3>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_right">
         <div>
             <div class="dsc_left">
-                <img class="logo" src="/static/image/windows.svg"> <img class="logo" src="/static/image/linux.svg"> <img class="logo" src="/static/image/mac.svg"><br/>
-                Code by python, cross platform, install just by pip,</br>
-                <img class="logo" src="/static/image/plugin.svg"> support plugins
+                Thoroughly tested prior to launch, ensuring stability and universality.</br>
+                The update-binary is compatible with the vast majority of devices, with custom solutions available for unique models.
             </div>
             <div class="dsc_right">
-                <h2>Cross platform</h2>
-                <h2>Plugins support</h2>
+                <h2>Stable and universal</h2>
+                <h2>Easily adaptable</h2>
             </div>
         </div>
     </div>
     <div class="section dsc_wrapper_left">
         <div>
             <div class="dsc_left">
-                <h2>Multiple docs</h2>
-                <h2>Blog</h2>
+                <h2>stop scrolling down</h2>
+                <h2>The homepage is not fully completed</h2>
             </div>
             <div class="dsc_right">
-                <img class="logo" src="/static/image/books.svg"> Supoort multiple docs/version, each has its content(sidebar). Say bye bye to large number of domains for your docs</br>
-                <img class="logo" src="/static/image/blog.svg"> Support lite blog system
-            </div>
-        </div>
-    </div>
-    <div class="section dsc_wrapper_right">
-        <div>
-            <div class="dsc_left">
-                <img class="logo" src="/static/image/theme.svg"> Default theme for efficient read, and you can install theme plugin</br>
-                At the same time, it supports custom css and js, and can precisely control the style of any page element by specifying the id on the page
-            </div>
-            <div class="dsc_right">
-                <h2>Theme can be customized</h2>
-            </div>
-        </div>
-    </div>
-        <div class="section dsc_wrapper_left">
-        <div>
-            <div class="dsc_left">
-                <h2>Faster generate</h2>
-                <h2>Real-time preview</h2>
-            </div>
-            <div class="dsc_right">
-                <img class="logo" src="/static/image/speed.svg"> Build in parallel, make full use of processor performance, and document rendering in an instant</br>
-                <img class="logo" src="/static/image/browser.svg"> Support browser real-time preview and modification
-            </div>
-        </div>
-    </div>
-    <div class="section dsc_wrapper_right">
-        <div>
-            <div class="dsc_left">
-                <img class="logo" src="/static/image/server.svg"> All generated static pages, copy to the server to complete the deployment</br>
-                <img class="logo" src="/static/image/seo.svg"> SEO friendly, such as page keywords customization, sitemap automatic generation, etc.
-            </div>
-            <div class="dsc_right">
-                <h2>Simple to deploy</h2>
-                <h2>SEO friendly</h2>
-            </div>
-        </div>
-    </div>
-    <div class="section" style="height: 100vh;">
-        <div class="big_btn_wrapper">
-            <div class="big_btn">
-                <a href="/get_started/zh/">More Detail</a>
-            </div>
-            <div class="big_btn">
-                <a href="/get_started/zh/usage/quick_start.html">Quick Start</a>
+                I don't understand English<br>
+                So I need a translator
             </div>
         </div>
     </div>
 </div>
-
 <div>
 <script type='text/javascript'>
     $(document).ready(function () {

@@ -1,6 +1,8 @@
 
 ---
 title: 轻松从安卓跨越到Windows
+keywords: Easy-aToWin, Android, Windows, 刷机包, Windows刷机包, 安卓刷机包,  Windows11, Windows10, Windows 11 arm, Windows 10 arm, 安卓刷Windows, 小米刷Windows, 一加刷Windows, 红米刷Windows, 亦魔
+desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows的刷机包
 id: home_page
 ---
 
@@ -19,10 +21,10 @@ id: home_page
         </div>
         <div class="big_btn_wrapper">
             <div class="big_btn">
-                <a href="#" id="learn_more">往下滑</a>
+                <a href="#" id="learn_more">查看更多</a>
             </div>
             <div class="big_btn">
-                <a href="/get_started/zh/">开始使用</a>
+                <a href="/user/zh/">开始使用</a>
             </div>
         </div>
     </div>
@@ -35,7 +37,7 @@ id: home_page
             </div>
             <div class="dsc_right">
                 <h3>只需两步</h3>
-                分区 → 刷入，然后...
+                分区 --> 刷入
                 <h3>享受</h3>
             </div>
         </div>
@@ -43,8 +45,8 @@ id: home_page
     <div class="section dsc_wrapper_right">
         <div>
             <div class="dsc_left">
-                上线之前经过详细测试，确保不会出错。</br>
-                脚本适应于绝大部分机型，部分机型的特殊性可单独定制。
+                上线之前经过详细测试，确保稳定通用</br>
+                脚本适应于绝大部分机型，特殊机型可单独定制
             </div>
             <div class="dsc_right">
                 <h2>稳定通用</h2>
@@ -55,57 +57,13 @@ id: home_page
     <div class="section dsc_wrapper_left">
         <div>
             <div class="dsc_left">
-                <h2>多文档</h2>
-                <h2>博客</h2>
+                <h2>别划了</h2>
+                <h2>首页没写完</h2>
             </div>
             <div class="dsc_right">
-                <img class="logo" src="/static/image/books.svg"> 支持多文档，每篇文档有单独的目录，也可以多版本。你的大量文档再也不用散落在各个域名下了！</br>
-                <img class="logo" src="/static/image/blog.svg"> 同时支持轻量博客系统
-            </div>
-        </div>
-    </div>
-    <div class="section dsc_wrapper_right">
-        <div>
-            <div class="dsc_left">
-                <img class="logo" src="/static/image/theme.svg"> 默认主题为高效阅读而设计，提供主题插件支持</br>
-                同时支持自定义 css、js，能通过页面指定 id 精确控制任何一个页面元素的样式
-            </div>
-            <div class="dsc_right">
-                <h2>主题可定制</h2>
-            </div>
-        </div>
-    </div>
-        <div class="section dsc_wrapper_left">
-        <div>
-            <div class="dsc_left">
-                <h2>快速构建</h2>
-                <h2>实时预览</h2>
-            </div>
-            <div class="dsc_right">
-                <img class="logo" src="/static/image/speed.svg"> 并行构建，充分利用处理器性能，文档渲染就在一瞬间</br>
-                <img class="logo" src="/static/image/browser.svg"> 支持浏览器实时预览修改
-            </div>
-        </div>
-    </div>
-    <div class="section dsc_wrapper_right">
-        <div>
-            <div class="dsc_left">
-                <img class="logo" src="/static/image/server.svg"> 生成的都是静态页面，拷贝到服务器即可完成部署</br>
-                <img class="logo" src="/static/image/seo.svg"> SEO 友好，比如 页关键词自定义、sitemap自动生成等
-            </div>
-            <div class="dsc_right">
-                <h2>部署简单</h2>
-                <h2>SEO 友好</h2>
-            </div>
-        </div>
-    </div>
-    <div class="section" style="height: 100vh;">
-        <div class="big_btn_wrapper">
-            <div class="big_btn">
-                <a href="/get_started/zh/">查看详细介绍</a>
-            </div>
-            <div class="big_btn">
-                <a href="/get_started/zh/usage/quick_start.html">快速上手</a>
+                本来主页就是随便写的
+                <br>
+                写的我头疼死了，快来个人帮我写
             </div>
         </div>
     </div>
