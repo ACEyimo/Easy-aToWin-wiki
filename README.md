@@ -20,19 +20,13 @@ pip3 install teedoc
 * Get site source files
 
 ```
-git clone https://github.com/teedoc/teedoc.github.io my_site
-```
-
-或者
-
-```
-git clone https://github.com/teedoc/teedoc.gitee.io my_site
+git clone https://github.com/ACEyimo/Easy-aToWin-wiki.git
 ```
 
 * Install plugins
 
 ```
-cd my_site
+cd Easy-aToWin-wiki
 teedoc install
 ```
 
