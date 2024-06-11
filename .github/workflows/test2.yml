@@ -54,10 +54,10 @@ jobs:
           git add -A
           git commit -m "rebuild website ad $commit_info"
           if [[ "${{ secrets.ACCESS_KEY }}x" == "x" ]]; then
+            exit 1
+          else
             git remote add origin https://${{ secrets.ACCESS_KEY }}@giuhub.com/${{ secrets.REPO }}.git
             git push origin HEAD:gh-pages --force
-          else
-            exit 1
           fi
 
       # - name: Deploy 🚀 to github pages
