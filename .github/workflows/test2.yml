@@ -56,7 +56,7 @@ jobs:
           if [[ "${{ secrets.ACCESS_KEY }}x" == "x" ]]; then
             exit 1
           else
-            git remote add origin https://${{ secrets.ACCESS_KEY }}@giuhub.com/${{ secrets.REPO }}.git
+            git remote add origin https://${{ secrets.ACCESS_KEY }}@github.com/ACEyimo/Easy-aToWin-wiki.git
             git push origin HEAD:gh-pages --force
           fi
 
