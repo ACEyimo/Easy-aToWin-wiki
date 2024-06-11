@@ -2,7 +2,7 @@
     "site_name": "Easy-aToWin",
     "site_slogon": "happy to write",
     "site_root_url": "/",
-    "site_domain": "easy-atowin.aceyimo.cn",
+    "site_domain": "Easy-aToWin.aceyimo.cn",
     "site_protocol": "https",
     "config_template_dir": "config",
     "source": "https://github.com/ACEyimo/Easy-aToWin-wiki",
