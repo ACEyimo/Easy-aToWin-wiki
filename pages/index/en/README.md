@@ -14,7 +14,7 @@ id: home_page
 <div id="fullpage">
     <div class="section" style="height: 100vh;">
         <div>
-            <h1><span>Easy-aToWin</span></h1>
+            <h1 style="font-size: 3.5em;">Easy-aToWin</h1>
             <h3>Flashable ZIPs to convert SDM 845/855 devices from Android to Windows</h3>
             test text
         </div>

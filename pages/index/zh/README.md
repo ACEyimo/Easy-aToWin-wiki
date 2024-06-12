@@ -15,7 +15,7 @@ id: home_page
 <div id="fullpage">
     <div class="section" style="height: 100vh;">
         <div>
-            <h1><span>Easy-aToWin</span></h1>
+            <h1 style="font-size: 3.5em;">Easy-aToWin</h1>
             <h3>骁龙845/855等机型从安卓到windows的刷机包</h3>
             测试文本
         </div>
