@@ -1,6 +1,6 @@
 # Easy-aToWin official website
 
-visit: [Easy-aToWin.ACEyimo.cn](https://Easy-aToWin.ACEyimo.cn) or [ACEyimo.github.io](https://ACEyimo.github.io)
+visit: [Easy-aToWin.ACEyimo.cn](https://Easy-aToWin.ACEyimo.cn) or [ACEyimo.github.io/Easy-aToWin-wiki](https://ACEyimo.github.io/Easy-aToWin-wiki)
 
 
 ## build locally
