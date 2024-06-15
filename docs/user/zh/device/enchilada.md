@@ -9,7 +9,7 @@ desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows
 
 
 ## 下载镜像
-[移动云盘](链接:https://caiyun.139.com/m/i?1N5BTrmYVrgDh)提取码：**OLnL**
+[移动云盘](https://caiyun.139.com/m/i?1N5BTrmYVrgDh)提取码：**OLnL**
 
 ---
 
