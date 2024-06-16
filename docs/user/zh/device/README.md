@@ -7,6 +7,7 @@ desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows
 ## 小米
 + 小米 Mix2S【[polaris](./polaris.md)】 当前由**亦魔**维护
 + 红米K20Pro【[raphael](raphael.md)】当前由**亦魔**维护
++ 小米8 【[dipper](dipper.md)】测试版本，直接照搬mix2s未经过其他修改
 ---
 
 ## 一加
