@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en-US"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Easy-aToWin, Android, Windows, 刷机包, Windows刷机包, 安卓刷机包, Windows11, Windows10, Windows 11 arm, Windows 10 arm, 安卓刷Windows, 小米刷Windows, 一加刷Windows, 红米刷Windows, 亦魔">
+    
+    
+    <meta name="description" content="Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows的刷机包">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser">
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>制作Winodws镜像 - Easy-aToWin</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/en/">
+                
+                    <img class="site_logo" src="/static/image/logo.svg" alt="Easy-aToWin logo">
+                
+                
+                    <h2>Easy-aToWin</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class="active"><a  href="/user/en/">Getting Started</a></li>
+<li class=""><a  href="/develop/en/">Developer Docs</a></li>
+<li class="active"><a target="_blank" href="/user/en/usage/download/">Download</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/aceyimo/Easy-aToWin"><img src='/static/image/github.png' style='height: 2em;vertical-align: middle;'></a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.png' style='height: 1.5em;vertical-align: middle;'>&nbspEnglish</a><ul><li class="active"><a  href="/user/en/usage/download/win.html">English</a></li>
+<li class=""><a  href="/user/zh/usage/download/win.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/user/en/index.html"><span class="label">Introduction to Easy-aToWin</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Baisc usage</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/user/en/usage/index.html"><span class="label">Quick start</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/filename.html"><span class="label">Flie Name specification</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/flow.html"><span class="label">Workflow and Progress</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent no_link"><a><span class="label">Download and Build</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/user/en/usage/download/github.html"><span class="label">Bulid from Github</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/download/index.html"><span class="label">Download in Released</span><span class=""></span></a></li>
+<li class="active with_link"><a href="/user/en/usage/download/win.html"><span class="label">Make Windows image</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/user/en/device/index.html"><span class="label">Device Exclusive & Supported list</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">XiaoMi</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/user/en/device/polaris.html"><span class="label">Xiaomi Mix2s(polaris)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/device/raphael.html"><span class="label">Redmi K20pro(raphael)</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">OnePlus</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/user/en/device/enchilada.html"><span class="label">OnePlus 6(enchilada)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/device/fajita.html"><span class="label">Oneplus 6T(fajita)</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/user/en/more/error.html"><span class="label">Query error</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/more/update.html"><span class="label">Update log</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/more/index.html"><span class="label">more</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>制作Winodws镜像</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <blockquote class="spoiler warning">
+<p> <strong>没写完</strong>，直接用我或者某贼网盘制作好的镜像吧，不同CPU的制作方法不统一，写起来又臭又长<br />
+当然，你非要自己的做，原理就是<code>挂载原版wim镜像</code> -&gt; <code>添加驱动</code> -&gt; <code>保存镜像</code>。剩下的参照项目文档吧：<a href="https://woa-msmnile.github.io/InstallationGuides/InstallDrivers.html"  target="_blank">woa-msmnile</a> | <a href="https://renegade-project.tech/zh/install"  target="_blank">Renegade Project</a>。全量包就是<strong>已进入Winodws桌面</strong>后再<code>另存为镜像</code>。</p>
+</blockquote>
+<p>Linux/Android环境为Windows系统添加驱动方法，不说没可能吧，至少现阶段没发现有人做过。所以需要一台<strong>Windows 设备</strong>用来自制一个<strong>包含驱动的WIM镜像</strong>。</p>
+<blockquote>
+<p>我更推荐下载我已经制作完成的镜像，或者去<a href="https://www.123pan.com/s/8eP9-5YvGA.html"  target="_blank">某贼的网盘</a>里扒拉个懒人包。</p>
+</blockquote>
+<h2 id="%E5%87%86%E5%A4%87%E6%9D%90%E6%96%99">准备材料</h2>
+<ol>
+<li>一台运行windows的设备</li>
+<li>原版Wim arm镜像</li>
+<li><a href="https://github.com/Chuyu-Team/Dism-Multi-language/releases/latest"  target="_blank">Dism++</a></li>
+<li>驱动包</li>
+</ol>
+<h2 id="%E6%9D%90%E6%96%99%E8%8E%B7%E5%8F%96">材料获取</h2>
+<p>对于只有手机的用户而言，可以使用云电脑来解决无windows设备的问题。国内的阿里无影云电脑和移动云电脑等可以免费体验一段时间。</p>
+<p><strong>原版镜像：</strong></p>
+<ul>
+<li>使用<a href="https://www.uupdump.cn/"  target="_blank">UUPdump</a>生成最新且集成更新的镜像。或者直接从微软<a href="https://www.bilibili.com/video/BV1hb4y1W7kC"  target="_blank">官网下载</a>。</li>
+<li>Linux或手机可以直接使用我网盘里附带的两个镜像，或参考我的<a href="https://www.bilibili.com/video/BV1hb4y1W7kC"  target="_blank">B站视频</a>用uupdump生成镜像，但都<code>不集成更新</code>。</li>
+</ul>
+<p><strong>驱动包：</strong></p>
+<ul>
+<li>骁龙845机型：从小太阳ACA提供的<a href="https://download.renegade-project.tech/"  target="_blank">下载网站</a>获取。或者项目的<a href="https://github.com/edk2-porting/WOA-Drivers/releases/"  target="_blank">开源地址</a>下载。</li>
+<li>骁龙855机型：参考项目开源地址<a href="https://github.com/woa-msmnile/msmnile-Drivers"  target="_blank">msmnile-Drivers</a>的README.md说明获取。</li>
+<li>骁龙835等其他机型：搜了半天没找全，我建议从某贼Mindows工具箱里获取到的网盘地址找吧。<ul>
+<li>打开 Mindows工具箱 &gt; 选择/切换机型 &gt; 下载/更新机型资源。然后打开 <code>Mindows工具箱/bin/tmp/update-dlres.txt</code> 就看到了</li>
+<li>或者直接选择你的机型，等下载完成后： <code>Mindows工具箱/bin/res/手机型号/woa/drive</code> 就是驱动包的所有文件了。</li>
+</ul>
+</li>
+</ul>
+<details>
+<summary>update-dlres.txt 2024-05-27</summary>
+<div class="details-content">
+<pre class="language-python"><code class="language-python">1:[sagit],小米6,2023.10.15-1,syxz.lanzn.com/iui7K1buc4gf,暂无,2023.8.19-1,syxz.lanzn.com/ij33v15w9nja,暂无,blank,blank,暂无,blank,blank,暂无 
+2:[wayne],小米6X,2023.12.23-1,syxz.lanzn.com/i1DDL1iuw1ud,暂无,2023.12.23-1,syxz.lanzn.com/iaDjY1itm49e,暂无,blank,blank,暂无,blank,blank,暂无 
+3:[dipper],小米8,2023.9.12-1,syxz.lanzn.com/iCbM0184643c,无,2023.8.19-1,syxz.lanzn.com/i6DdV169ez4f,暂无,blank,blank,暂无,blank,blank,暂无 
+4:[equuleus],小米8屏幕指纹版,2023.10.15-1,syxz.lanzn.com/ikk1I1bubl2h,暂无,2023.8.19-1,syxz.lanzn.com/iOiTH16bm5ja,暂无,blank,blank,暂无,blank,blank,暂无 
+5:[ursa],小米8透明探索版,2023.8.19-1,syxz.lanzn.com/iMYkS17ntgxa,更新分区表恢复文件,2023.8.19-1,syxz.lanzn.com/iQ0JH16bmjje,暂无,blank,blank,暂无,blank,blank,暂无 
+6:[cepheus],小米9-小米9透明尊享版,2024.1.20-1,syxz.lanzn.com/iYlOK1loi87a,更新安卓14TWRP,2024.2.17-1,[syxz.lanzn.com/iGMtS1ok5zne][syxz.lanzn.com/iZsyg1ok62ed],USB默认文件传输模式（充电需要切换），更新GPU，修复AI键。注意：必须使用比Win10-18363更高的版本。建议使用Win11-22H2或更高版本。,blank,blank,暂无,2024.1.12-1,[syxz.lanzouo.com/iT5FD1kuwg6b][syxz.lanzouo.com/iPJwo1kuwjbe],修复右键。注意：必须使用比Win10-18363更高的版本。建议使用Win11-22H2或更高版本。 
+ 7:[chiron],小米MIX2,2023.10.30-1,syxz.lanzn.com/iqlQc1d8uivc,更新官方分区表,2023.8.19-1,syxz.lanzn.com/irQnD16c06ta,暂无,blank,blank,暂无,blank,blank,暂无 
+8:[polaris],小米MIX2S,2023.9.12-1,syxz.lanzn.com/i3xMU1846ute,无,2023.12.7-1,syxz.lanzn.com/iGsht1h44t8j,修复声音,2023.9.12-1,syxz.lanzn.com/i3xMU1846ute,无,2023.12.7-1,syxz.lanzn.com/iGsht1h44t8j,修复声音 
+9:[perseus],小米MIX3,2023.9.24-1,syxz.lanzn.com/iblWJ19rucej,更新资源,2023.8.19-1,syxz.lanzn.com/igscB16bsori,暂无,blank,blank,暂无,blank,blank,暂无 
+10:[andromeda],小米MIX3_5G,2023.8.19-1,syxz.lanzn.com/igZwP169frod,暂无,2023.8.19-1,[syxz.lanzn.com/iUL0f16btgih][syxz.lanzn.com/i5cLA16btc1g][syxz.lanzn.com/i57wv16btchc],暂无,blank,blank,暂无,blank,blank,暂无 
+ 11:[jason],小米Note3,2023.8.19-1,syxz.lanzouo.com/iZeA01kdi5qj,暂无,2023.8.19-1,syxz.lanzouo.com/iFr0H1kdi9uh,暂无,blank,blank,暂无,blank,blank,暂无 
+12:[beryllium],小米POCOF1,2023.8.19-1,syxz.lanzn.com/iJZSw169ftgh,暂无,2023.8.19-1,syxz.lanzn.com/iaJuX16bzsre,暂无,blank,blank,暂无,blank,blank,暂无 
+13:[vayu],小米POCOX3Pro,2023.8.19-1,syxz.lanzn.com/iqVKV169go3a,暂无,2023.8.19-1,[syxz.lanzn.com/iiU5n16c3j5c][syxz.lanzn.com/ivjLZ16c3dja][syxz.lanzn.com/iVAnr16c3god],暂无,blank,blank,暂无,blank,blank,暂无 
+ 14:[nabu],小米平板5,2024.1.3-1,[syxz.lanzn.com/igOAI1jx3mpe][syxz.lanzn.com/iyaW31jx44li],增加安卓14TWRP,2024.3.10-1,[syxz.lanzoue.com/iBITj1qzcfxi][syxz.lanzoue.com/ie7D81qzcl8j],同步Github更新,blank,blank,暂无,2024.1.15-1,[syxz.lanzn.com/iEPnB1l6rolg][syxz.lanzn.com/ivptO1l6rpri],【警告：本次更新驱动前必须先更新主程序到最新！】修复官方键盘，WiFi蓝牙。更多详见Github。 
+15:[pipa],小米平板6,2024.3.19-1,syxz.lanzoue.com/i6bET1rxbule,更新128GB官方分区表,2024.1.2-1,syxz.lanzn.com/iFKYM1jrh59e,暂无,blank,blank,暂无,blank,blank,暂无 
+16:[raphael],红米K20Pro-红米K20Pro尊享版,2023.9.24-1,syxz.lanzn.com/i0Bij19rup2f,更新256GB分区表恢复文件,2023.12.24-1,[syxz.lanzn.com/iXkGJ1ise6kd][syxz.lanzn.com/ilmeB1ise7kj][syxz.lanzn.com/iYDdT1iseb9c],更新UEFI，修复亮度调节。,blank,blank,暂无,blank,blank,暂无 
+ 17:[shark],黑鲨1,2023.9.12-1,syxz.lanzn.com/i5P0p184460j,暂无,2024.1.27-1,syxz.lanzoue.com/ifXt11r7srmd,更新WiFi，声音，GPU驱动。但驱动尚不稳定，目前推荐使用打好驱动的懒人包。,blank,blank,暂无,blank,blank,暂无 
+18:[bullhead],黑鲨Helo,2023.8.19-1,syxz.lanzn.com/iGGuf169lfjc,暂无,2023.8.19-1,syxz.lanzn.com/ifoCb16d1feb,暂无,blank,blank,暂无,blank,blank,暂无 
+19:[OnePlus5],一加5,2023.10.15-1,syxz.lanzn.com/iKLov1bubswj,暂无,2023.8.19-1,syxz.lanzn.com/id52w16d1fuh,暂无,blank,blank,暂无,blank,blank,暂无 
+ 20:[OnePlus5T],一加5T,2023.10.15-1,syxz.lanzn.com/idw9u1buc2da,暂无,2023.8.19-1,syxz.lanzn.com/i89MB16d1gib,暂无,blank,blank,暂无,blank,blank,暂无 
+ 21:[OnePlus6],一加6,2023.11.26-1,[syxz.lanzn.com/i0rBf1fyxgvg][syxz.lanzn.com/ivCdV1fyxigd],更新256GB官方分区表,2023.8.19-1,syxz.lanzn.com/ijjHR16d1huj,暂无,blank,blank,暂无,blank,blank,暂无 
+22:[OnePlus6T],一加6T-一加6T迈凯伦版,2023.8.19-1,syxz.lanzn.com/ijQAj16bb32f,暂无,2023.8.19-1,syxz.lanzn.com/ics0K16d1i8d,暂无,blank,blank,暂无,blank,blank,暂无 
+23:[OnePlus7Pro],一加7Pro_4G,2023.8.19-1,[syxz.lanzn.com/imSIo16bgfrc][syxz.lanzn.com/i8sZt16bghhe],暂无,2023.10.15-1,[syxz.lanzn.com/iFZdS1buw3ud][syxz.lanzn.com/iiJqs1buw90j][syxz.lanzn.com/ia7CH1buwaza],更新UEFI和驱动,blank,blank,暂无,blank,blank,暂无 
+ 24:[OnePlus7T],一加7T,2023.8.19-1,syxz.lanzn.com/i8rm916bgqmd,暂无,2023.8.19-1,syxz.lanzn.com/iVxgm16d1ipa,暂无,blank,blank,暂无,blank,blank,暂无 
+25:[OnePlus7TPro],一加7TPro_4G-一加7TPro迈凯伦版_4G,2023.10.30-1,[syxz.lanzn.com/ibnAQ1d8v1di][syxz.lanzn.com/i07tg1d8ve7a],更新安卓13TWRP（注：TWRP连不上电脑请手动重启TWRP再试）,2024.3.1-1,[syxz.lanzoue.com/ijjQE1pxiysf][syxz.lanzoue.com/iw0001pxj69e][syxz.lanzoue.com/ipevU1pxjd1i],同步驱动更新，支持声音外放,blank,blank,暂无,2024.2.18-1,[syxz.lanzn.com/iVhwm1onqrbi][syxz.lanzn.com/iki961onquid],同步Github更新 
+26:[OnePlus7TProNR],一加7TPro迈凯伦版_5G,2023.8.19-1,syxz.lanzn.com/i8oWs16bh4za,暂无,2023.8.19-1,syxz.lanzn.com/i5y8i16d1r1a,暂无,blank,blank,暂无,blank,blank,暂无 
+27:[TP1803],努比亚mini5G,2023.8.19-1,syxz.lanzn.com/iTlZJ16bhcyh,暂无,2023.8.19-1,[syxz.lanzn.com/ieeQb16d1z9g][syxz.lanzn.com/iFlJA16d1xbg][syxz.lanzn.com/i9uEH16d1y1c],暂无,blank,blank,暂无,blank,blank,暂无 
+28:[NX616J],努比亚X,2023.10.15-1,syxz.lanzn.com/i0e151bucoze,无,2023.9.12-1,syxz.lanzn.com/iDcY217iwj9c,更新触摸，WiFi，GPU，息屏,blank,blank,暂无,blank,blank,暂无 
+29:[NX563J],努比亚Z17,2023.8.19-1,syxz.lanzn.com/iW2BB16bhn3c,暂无,2023.11.10-1,syxz.lanzn.com/ifbjy1efeceb,尝试添加一些驱动,blank,blank,暂无,blank,blank,暂无 
+30:[NX595J],努比亚Z17S,2023.8.19-1,syxz.lanzn.com/idX4o16bhr3g,暂无,2023.8.19-1,syxz.lanzn.com/ik2vG16d24yb,暂无,blank,blank,暂无,blank,blank,暂无 
+31:[NX606J],努比亚Z18,2023.8.19-1,syxz.lanzn.com/iGQnV16bhvhe,暂无,2024.1.3-1,syxz.lanzn.com/iSit51jx14od,USB，触摸，GPU，移动数据，蓝牙等大部分功能可用，NFC，扬声器不可用,blank,blank,暂无,blank,blank,暂无 
+ 32:[NX619J],红魔Mars-红魔2,2023.8.19-1,syxz.lanzn.com/isQHJ16bi0vi,暂无,2023.8.19-1,syxz.lanzn.com/iiisB16d27gb,暂无,blank,blank,暂无,blank,blank,暂无 
+33:[judyln],LGG7,2023.9.12-1,syxz.lanzn.com/i6PCq1849pud,无,2023.8.19-1,syxz.lanzn.com/i7uKN17ti1re,暂无,blank,blank,暂无,blank,blank,暂无 
+34:[alphaplus],LGG8,2023.8.19-1,syxz.lanzn.com/iP8EY17puw7i,暂无,2024.1.14-1,[syxz.lanzouo.com/iARr41l4gwid][syxz.lanzouo.com/iWGyO1l4gx3e],修复WiFi，蓝牙，定位，触摸（可能需要手动更新驱动），声音（可能需要手动更新驱动），GPU（理论可用），亮度（理论可用）,blank,blank,暂无,blank,blank,暂无 
+35:[mh2lm],LGG8X,2023.8.19-1,[syxz.lanzn.com/izrd617iwumb][syxz.lanzn.com/iJ3La17iwv7c],暂无,2023.8.19-1,[syxz.lanzn.com/inUxx16d2foh][syxz.lanzn.com/i4AcK16d2dri][syxz.lanzn.com/iKy0516d2dub],暂无,blank,blank,暂无,blank,blank,暂无 
+ 36:[judypn],LGV40,2023.8.19-1,syxz.lanzouo.com/iEbKR1ldwfpi,暂无,2023.8.19-1,syxz.lanzn.com/iYIDM1lamulg,暂无,blank,blank,暂无,blank,blank,暂无 
+37:[flashlmdd],LGV50,2023.8.19-1,syxz.lanzn.com/ilA4y17ixw3a,暂无,2023.8.19-1,syxz.lanzn.com/iBap416d2iwd,暂无,blank,blank,暂无,blank,blank,暂无 
+38:[mh2lm_5g],LGV50S,2023.8.19-1,syxz.lanzn.com/iTQri16bj2vg,暂无,2023.8.19-1,[syxz.lanzn.com/iANev16d2pjc][syxz.lanzn.com/ivaaY16d2qaj],暂无,blank,blank,暂无,blank,blank,暂无 
+39:[16th],魅族16th,2023.10.15-1,syxz.lanzn.com/iRMEU1bucz1g,暂无,2023.8.19-1,syxz.lanzn.com/i7A7316d2utc,暂无,blank,blank,暂无,blank,blank,暂无 
+40:[16thPlus],魅族16thPlus,2024.3.15-1,syxz.lanzoue.com/iDF811ri9s8h,增加128GB官方分区表，增加修复UEFI显示卡顿的xbl.img,2024.3.15-1,syxz.lanzoue.com/i6hM61ri9gzc,更换可用驱动和UEFI,blank,blank,暂无,blank,blank,暂无 
+41:[PAFM00],OPPOFindX标准版,2023.10.15-1,syxz.lanzn.com/iQ4JR1bucl5g,暂无,2023.11.29-1,syxz.lanzn.com/iRyfF1gct1za,USB，蓝牙可用，其余不可用,blank,blank,暂无,blank,blank,暂无 
+42:[PAHM00],OPPOFindX高配版,2023.12.10-1,syxz.lanzn.com/iv5A91hf5p3c,暂无,2023.12.10-1,syxz.lanzn.com/igRkR1hf5xqd,暂无,blank,blank,暂无,blank,blank,暂无 
+43:[R11],OPPOR11,2023.12.23-1,syxz.lanzn.com/iEZFR1itljnc,暂无,2023.12.23-1,syxz.lanzn.com/iyE9U1itm33c,暂无,blank,blank,暂无,blank,blank,暂无 
+44:[OP46C3],OPPOReno10X-OPPOReno10倍变焦版,2023.8.19-1,syxz.lanzn.com/iQBgC16bjmkf,暂无,2023.8.19-1,syxz.lanzn.com/isee016d33uh,暂无,blank,blank,暂无,blank,blank,暂无 
+45:[trident],坚果R1,2023.8.19-1,syxz.lanzn.com/iiijN16bjwyj,暂无,2023.8.19-1,syxz.lanzn.com/iusrr16d369e,暂无,blank,blank,暂无,blank,blank,暂无 
+46:[ASUS_I001_1],华硕ROGPhone2,2023.8.19-1,syxz.lanzn.com/iaJqe17iyk9a,暂无,2024.3.1-1,[syxz.lanzoue.com/i5OVt1pwmqob][syxz.lanzoue.com/iM8nL1pwmu5g],修复触摸，声音；减小GPU故障概率,blank,blank,暂无,blank,blank,暂无 
+47:[P845A02],中兴天机Axon9,2023.8.19-1,syxz.lanzn.com/ia5OY16bkdfc,暂无,2023.8.19-1,syxz.lanzn.com/ijSxA16d3auj,暂无,blank,blank,暂无,blank,blank,暂无 
+48:[linus],雷蛇2,2023.8.19-1,syxz.lanzn.com/ioGRP16bkhcd,暂无,2023.8.19-1,syxz.lanzn.com/ifb2O16d3dhe,暂无,blank,blank,暂无,blank,blank,暂无 
+49:[mata],EssentialPhone,2023.9.12-1,syxz.lanzn.com/ikonM1848src,暂无,2023.8.19-1,syxz.lanzn.com/iumyX16d3f0j,暂无,blank,blank,暂无,blank,blank,暂无 
+50:[duo],SurfaceDuo,2023.10.15-1,syxz.lanzn.com/i47Cw1bubfcb,暂无,2024.1.16-1,[syxz.lanzn.com/iUlWw1lb7sod][syxz.lanzn.com/iFTS31lb7u0b][syxz.lanzn.com/imny91lb7wra][syxz.lanzn.com/iQx8Y1lb7xwb][syxz.lanzn.com/iL4HK1lb7zhi][syxz.lanzn.com/iOPPd1lb820j],同步Github驱动更新,blank,blank,暂无,blank,blank,暂无 
+</code></pre>
+</div>
+</details>
+<blockquote>
+<p>未完待续....</p>
+</blockquote>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/user/en/usage/download/index.html">
+                            <span class="icon"></span>
+                            <span class="label">Download in Released</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/user/en/device/index.html">
+                            <span class="label">Device Exclusive & Supported list</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>Related Links:</a><ul><li><a target="_blank" href="https://renegade-project.tech/">Renegade Project</a></li>
+<li><a target="_blank" href="https://github.com/woa-msmnile">WOA-msmnile</a></li>
+<li><a  href="https://github.com/WOA-Project">WOA Project</a></li>
+</ul>
+</li>
+<li><a>Source Code:</a><ul><li><a target="_blank" href="https://github.com/ACEyimo/Easy-aToWin">GitHub</a></li>
+<li><a target="_blank" href="https://gitee.com/ACEyimo/Easy-aToWin">FxxK U Gitee</a></li>
+<li><a target="_blank" href="https://github.com/aceyimo/Easy-aToWin-wiki">The docs link</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a  href="/#">Copyright © 2024 Yemon/Evil Mode</a></li>
+<li><a  href="https://teedoc.neucrack.com/">Bulid by teedoc</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Easy-aToWin, Android, Windows, 刷机包, Windows刷机包, 安卓刷机包, Windows11, Windows10, Windows 11 arm, Windows 10 arm, 安卓刷Windows, 小米刷Windows, 一加刷Windows, 红米刷Windows, 亦魔">
+    
+    
+    <meta name="description" content="Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows的刷机包">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser">
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>Easy-aToWin 快速指南 - Easy-aToWin</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/">
+                
+                    <img class="site_logo" src="/static/image/logo.svg" alt="Easy-aToWin logo">
+                
+                
+                    <h2>Easy-aToWin</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class="active"><a  href="/user/zh/">开始使用</a></li>
+<li class=""><a  href="/develop/zh/">开发文档</a></li>
+<li class=""><a target="_blank" href="/user/zh/usage/download/">下载</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/aceyimo/Easy-aToWin"><img src='/static/image/github.png' style='height: 2em;vertical-align: middle;'></a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.png' style='height: 1.5em;vertical-align: middle;'>&nbsp中文 简体</a><ul><li class=""><a  href="/user/en/usage/index.html">English</a></li>
+<li class="active"><a  href="/user/zh/usage/index.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/user/zh/index.html"><span class="label">Easy-aToWin 简介</span><span class=""></span></a></li>
+<li class="active_parent no_link"><a><span class="label">食用方法</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/user/zh/usage/index.html"><span class="label">快速开始</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/usage/filename.html"><span class="label">文件说明</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/usage/flow.html"><span class="label">流程与进度</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">下载与构建</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/user/zh/usage/download/github.html"><span class="label">从gayhub构建</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/usage/download/index.html"><span class="label">下载已发布的包</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/usage/download/win.html"><span class="label">制作Windows镜像</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/user/zh/device/index.html"><span class="label">设备特殊性</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">小米</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/user/zh/device/polaris.html"><span class="label">小米Mix2s(polaris)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/device/raphael.html"><span class="label">红米K20pro(raphael)</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">一加</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/user/zh/device/enchilada.html"><span class="label">一加6(enchilada)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/device/fajita.html"><span class="label">一加6T(fajita)</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/user/zh/more/error.html"><span class="label">错误码查询</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/more/update.html"><span class="label">更新日志</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/zh/more/index.html"><span class="label">其他</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>Easy-aToWin 快速指南</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <blockquote class="spoiler warning">
+<p> <strong>刷机包依赖文件名，请严格按照规则命名，切勿随意修改！</strong>   <strong>[</strong>详情参照<a href="fileName.html"  >文件名说明</a><strong>]</strong></p>
+</blockquote>
+<h2 id="%E5%88%B7%E6%9C%BA%E5%89%8D%E5%87%86%E5%A4%87">刷机前准备</h2>
+<ul>
+<li>一个 <strong>脑子</strong></li>
+<li><a href="https://twrp.me/Devices/"  target="_blank">TWRP</a>等第三方REC</li>
+<li><a href="./download/"  >分区包</a> 和 <a href="./download/"  >刷写包</a></li>
+<li><a href="./download/win.html"  >WIndows镜像</a></li>
+</ul>
+<hr />
+<h2 id="%E5%88%B7%E6%9C%BA%E5%8C%85%E7%B1%BB%E5%9E%8B">刷机包类型</h2>
+<ul>
+<li><strong>分区包</strong>(<code>part</code>)：对分区进行调整，创建安装Windows需要的分区。</li>
+<li><strong>刷写包</strong>(<code>flash</code>)：刷入Windows系统，创建引导记录。</li>
+<li><strong>恢复包</strong>(<code>reset</code>)：恢复分区为出厂预设值。</li>
+</ul>
+<hr />
+<h2 id="%E5%BF%AB%E9%80%9F%E5%85%A5%E6%89%8B">快速入手</h2>
+<blockquote class="spoiler warning">
+<p> 建议在最新的<code>官方系统</code><sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup>和官方分区下操作，可以避免大部分问题。</p>
+</blockquote>
+<ol>
+<li><strong>刷入part包（分区包）</strong><ul>
+<li>重启到Recovery</li>
+<li>格式化data分区</li>
+<li>重启到系统（这一步很重要）</li>
+</ul>
+</li>
+<li><strong>重启到Recovery</strong></li>
+<li>备份boot分区</li>
+<li><strong>刷入flash包（刷写包）</strong></li>
+<li>重启，然后享受</li>
+</ol>
+<blockquote>
+<p>因为分区包会导致手机数据清空，避免重复下载，<strong>分区完成后再下载<code>刷写包</code>和<code>Win镜像</code></strong>。当然你可以一次性下载完后放置在<code>U盘</code>里</p>
+</blockquote>
+<hr />
+<h2 id="%E5%85%B6%E4%BB%96%E8%AF%B4%E6%98%8E">其他说明</h2>
+<ol>
+<li>刷写包完成后会自动向<code>/sdcard/</code>目录下发送当前boot分区备份，但我仍然建议提前<strong>手动备份</strong>好<code>boot</code>和<code>基带</code><sup class="footnote-ref" id="fnref-2"><a href="#fn-2">2</a></sup>。</li>
+<li>如果你想要换win系统，先恢复<code>安卓boot</code>镜像，再刷一遍刷写包即可。</li>
+<li>我不建议使用非官方系统安装此项目刷机包，这可能导致一些未知问题<sup class="footnote-ref" id="fnref-3"><a href="#fn-3">3</a></sup>。如果你执意如此：<ul>
+<li>我建议在刷入<strong>分区包后、刷写包之前</strong>更换你想要的安卓镜像，这可以避免很多问题，<strong>但不绝对</strong>！</li>
+<li>未分区前如果你使用动了分区的安卓镜像，这<strong>极有可能</strong>出现未知问题。</li>
+<li>已安装完Win系统后，提前备份好<code>Win boot</code>，再更换安卓镜像。</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="%E4%BB%A5%E5%90%8E%E6%83%B3%E5%88%B0%E5%88%AB%E7%9A%84%E5%86%8D%E8%A1%A5%E5%85%85">以后想到别的再补充</h2>
+<hr />
+<section class="footnotes">
+<ol>
+<li id="fn-1"><p>双分区手机A和b分区需要保持一致，简单方法是在已安装最新版的系统里复刷一遍。<a href="#fnref-1" class="footnote">&#8617;</a></p></li>
+<li id="fn-2"><p>基带丢失会导致失去<code>sim卡通讯</code>、<code>IEMI</code>丢失等问题，且<code>9008</code>无法拯救。备份时勾选<strong>EFS、Modem</strong>（基带）即可。<a href="#fnref-2" class="footnote">&#8617;</a></p></li>
+<li id="fn-3"><p>非官方系统可能因为环境、依赖等不同，导致出现刷机失败及未知错误。一旦出现问题，很有可能<strong>9008都无法恢复</strong>。<a href="#fnref-3" class="footnote">&#8617;</a></p></li>
+</ol>
+</section>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/user/zh/index.html">
+                            <span class="icon"></span>
+                            <span class="label">Easy-aToWin 简介</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/user/zh/usage/filename.html">
+                            <span class="label">文件说明</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>友情链接：</a><ul><li><a target="_blank" href="https://renegade-project.tech/">Renegade Project</a></li>
+<li><a target="_blank" href="https://github.com/woa-msmnile">WOA-msmnile</a></li>
+<li><a  href="https://github.com/WOA-Project">WOA Project</a></li>
+</ul>
+</li>
+<li><a>开源地址：</a><ul><li><a target="_blank" href="https://github.com/ACEyimo/Easy-aToWin">Github</a></li>
+<li><a target="_blank" href="https://gitee.com/ACEyimo/Easy-aToWin">FxxK U Gitee</a></li>
+<li><a target="_blank" href="https://github.com/aceyimo/Easy-aToWin-wiki">文档地址</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a  href="/#">Copyright © 2024 亦魔/Yemon</a></li>
+<li><a  href="https://teedoc.neucrack.com/">Bulid by teedoc</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+</body>
+
+</html>

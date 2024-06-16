@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en-US"  class="">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="keywords" content="Easy-aToWin, Android, Windows, 刷机包, Windows刷机包, 安卓刷机包, Windows11, Windows10, Windows 11 arm, Windows 10 arm, 安卓刷Windows, 小米刷Windows, 一加刷Windows, 红米刷Windows, 亦魔">
+    
+    
+    <meta name="description" content="Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows的刷机包">
+    
+    <meta name="generator" content="teedoc">
+    <meta name="theme" content="teedoc-plugin-theme-default">
+    
+        
+        <meta name="markdown-generator" content="teedoc-plugin-markdown-parser">
+        
+        <script>
+MathJax = {"loader": {"load": ["output/svg"]}, "tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}, "svg": {"fontCache": "global"}};
+</script>
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+        <meta name="html-generator" content="teedoc-plugin-jupyter-notebook-parser">
+        
+        <script src="/static/js/theme_default/pre_main.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/prism.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/viewer.min.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/dark.css" type="text/css"/>
+        
+        <link rel="stylesheet" href="/static/css/theme_default/light.css" type="text/css"/>
+        
+        <script src="/static/js/theme_default/jquery.min.js"></script>
+        
+        <script src="/static/js/theme_default/split.js"></script>
+        
+        <link rel="stylesheet" href="/static/css/custom.css" type="text/css"/>
+        
+    
+    
+    <title>从github构建 - Easy-aToWin</title>
+    
+    <script type="text/javascript">js_vars = {}</script>
+    <script type="text/javascript">metadata = {"tags": [], "date": false, "update": [], "ts": 0, "author": "", "brief": "", "cover": ""}</script>
+</head>
+
+
+<body class="type_doc">
+    
+    <div id="navbar">
+        <div id="navbar_menu">
+            <a class="site_title" href="/en/">
+                
+                    <img class="site_logo" src="/static/image/logo.svg" alt="Easy-aToWin logo">
+                
+                
+                    <h2>Easy-aToWin</h2>
+                
+        </a>
+            <a id="navbar_menu_btn"></a>
+        </div>
+        <div id="navbar_items">
+            <div>
+                <ul id="nav_left">
+<li class="active"><a  href="/user/en/">Getting Started</a></li>
+<li class=""><a  href="/develop/en/">Developer Docs</a></li>
+<li class="active"><a target="_blank" href="/user/en/usage/download/">Download</a></li>
+</ul>
+
+            </div>
+            <div>
+                <ul id="nav_right">
+<li class=""><a target="_blank" href="https://github.com/aceyimo/Easy-aToWin"><img src='/static/image/github.png' style='height: 2em;vertical-align: middle;'></a></li>
+<li class="sub_items "><a  ><img src='/static/image/language.png' style='height: 1.5em;vertical-align: middle;'>&nbspEnglish</a><ul><li class="active"><a  href="/user/en/usage/download/github.html">English</a></li>
+<li class=""><a  href="/user/zh/usage/download/github.html">中文 简体</a></li>
+</ul></li>
+</ul>
+
+                <ul class="nav_plugins"><li><a id="themes" class="light"></a></li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper">
+        <div id="sidebar_wrapper">
+            <div id="sidebar">
+                <div id="sidebar_title">
+                    
+                </div>
+                <ul class="show">
+<li class="not_active with_link"><a href="/user/en/index.html"><span class="label">Introduction to Easy-aToWin</span><span class=""></span></a></li>
+<li class="not_active no_link"><a><span class="label">Baisc usage</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="not_active with_link"><a href="/user/en/usage/index.html"><span class="label">Quick start</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/filename.html"><span class="label">Flie Name specification</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/flow.html"><span class="label">Workflow and Progress</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="active_parent no_link"><a><span class="label">Download and Build</span><span class="sub_indicator"></span></a><ul class="show">
+<li class="active with_link"><a href="/user/en/usage/download/github.html"><span class="label">Bulid from Github</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/download/index.html"><span class="label">Download in Released</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/usage/download/win.html"><span class="label">Make Windows image</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/user/en/device/index.html"><span class="label">Device Exclusive & Supported list</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active no_link"><a><span class="label">XiaoMi</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/user/en/device/polaris.html"><span class="label">Xiaomi Mix2s(polaris)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/device/raphael.html"><span class="label">Redmi K20pro(raphael)</span><span class=""></span></a></li>
+</ul>
+</li>
+<li class="not_active no_link"><a><span class="label">OnePlus</span><span class="sub_indicator sub_indicator_collapsed"></span></a><ul class="">
+<li class="not_active with_link"><a href="/user/en/device/enchilada.html"><span class="label">OnePlus 6(enchilada)</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/device/fajita.html"><span class="label">Oneplus 6T(fajita)</span><span class=""></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="not_active with_link"><a href="/user/en/more/error.html"><span class="label">Query error</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/more/update.html"><span class="label">Update log</span><span class=""></span></a></li>
+<li class="not_active with_link"><a href="/user/en/more/index.html"><span class="label">more</span><span class=""></span></a></li>
+</ul>
+
+            </div>
+        </div>
+        <div id="article">
+            <div id="menu_wrapper">
+                <div id="menu">
+                </div>
+            </div>
+            <div id="content_wrapper">
+                <div id="content_body">
+                    <div id="article_head">
+                        <div id="article_title">
+                            
+                            <h1>从github构建</h1>
+                            
+                        </div>
+                        <div id="article_tags">
+                            <ul>
+                            
+                            </ul>
+                        </div>
+                        <div id="article_info">
+                        <div id="article_info_left">
+                            <span class="article_author">
+                                
+                            </span>
+                            
+                        </div>
+                        <div id="article_info_right">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div id="article_tools">
+                        <span></span>
+                        <span id="toc_btn"></span>
+                    </div>
+                    <div id="update_history">
+                        
+                    </div>
+                    <div id="article_content">
+                        
+                            <blockquote>
+<p>查看<a href="../../device/index.html"  >设备特殊性</a>查找支持列表</p>
+</blockquote>
+<h2 id="%E4%B8%8B%E8%BD%BD">下载</h2>
+<p>打开项目<a href="https://github.com/ACEyimo/Easy-aToWin"  target="_blank">Github</a>/<a href="https://gitee.com/ACEyimo/Easy-aToWin"  target="_blank">Gitee</a>，点击右上角的&quot;Code&quot;按钮，选择&quot;Download ZIP&quot;，下载<a href="https://github.com/ACEyimo/Easy-aToWin/archive/refs/heads/main.zip"  target="_blank">ZIP文件</a>。<br />
+或者，你也可以用git克隆仓库到本地：</p>
+
+<pre class="language-sh"><code class="language-sh">git clone https://github.com/ACEyimo/Easy-aToWin.git
+cd Easy-aToWin &amp;&amp; chmod +x make.sh
+</code></pre>
+<h2 id="%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96">安装依赖</h2>
+<p>刷机包的制作依赖7zip，已在项目内置，这通常不需要额外安装</p>
+
+<pre class="language-bash"><code class="language-bash"># 示例，不需要执行该命令
+uname$localhost:Easy-aToWin$ ls bin/ | grep 7zzs
+7zzs-arm64
+7zzs-x86_64
+</code></pre>
+<blockquote>
+<p>如果报错请自行安装依赖：</p>
+</blockquote>
+<p>ubuntu：</p>
+
+<pre class="language-bash"><code class="language-bash">sudo apt install p7zip-full
+</code></pre>
+<p>termux：</p>
+
+<pre class="language-bash"><code class="language-bash">pkg install p7zip
+</code></pre>
+<h2 id="%E7%94%9F%E6%88%90%E5%88%B7%E6%9C%BA%E5%8C%85">生成刷机包</h2>
+<p><code>./make.sh 手机代号</code><br />
+命令执行完成后会在<code>out/手机代号/</code>目录下生成刷机包<br />
+以一加6为例：</p>
+
+<pre class="language-sh"><code class="language-sh">./make.sh enchilada
+</code></pre>
+<p>可选项：<code>-o 输出指定的包</code><br />
+默认值all，可选参数（part/flash/reset）<br />
+示例，此命令结束后会在<code>out/手机型号/</code>下生成<code>分区包</code>：</p>
+
+<pre class="language-sh"><code class="language-sh">./make.sh enchilada -o part
+</code></pre>
+<h2 id="%E4%BD%BF%E7%94%A8">使用</h2>
+<p>执行完成后，会在<code>out/手机型号/</code>文件夹生成三个包，按照<a href="../filename.html"  >文件名说明</a>更改。然后刷入即可</p>
+
+                        
+                    </div>
+                </div>
+                <div id="previous_next">
+                    <div id="previous">
+                        
+                        <a href="/user/en/usage/flow.html">
+                            <span class="icon"></span>
+                            <span class="label">Workflow and Progress</span>
+                        </a>
+                        
+                    </div>
+                    <div id="next">
+                        
+                        <a href="/user/en/usage/download/index.html">
+                            <span class="label">Download in Released</span>
+                            <span class="icon"></span>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div id="comments-container"></div>
+            </div>
+            <div id="toc_wrapper">
+                <div id="toc">
+                    <div id="toc_content">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="to_top" href="#"></a>
+    <div id="doc_footer">
+        <div id="footer">
+            <div id="footer_top">
+                <ul>
+<li><a>Related Links:</a><ul><li><a target="_blank" href="https://renegade-project.tech/">Renegade Project</a></li>
+<li><a target="_blank" href="https://github.com/woa-msmnile">WOA-msmnile</a></li>
+<li><a  href="https://github.com/WOA-Project">WOA Project</a></li>
+</ul>
+</li>
+<li><a>Source Code:</a><ul><li><a target="_blank" href="https://github.com/ACEyimo/Easy-aToWin">GitHub</a></li>
+<li><a target="_blank" href="https://gitee.com/ACEyimo/Easy-aToWin">FxxK U Gitee</a></li>
+<li><a target="_blank" href="https://github.com/aceyimo/Easy-aToWin-wiki">The docs link</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <div id="footer_bottom">
+                <ul>
+<li><a  href="/#">Copyright © 2024 Yemon/Evil Mode</a></li>
+<li><a  href="https://teedoc.neucrack.com/">Bulid by teedoc</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    
+        <script src="/teedoc-plugin-markdown-parser/mermaid.min.js"></script>
+    
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    
+        <script src="/static/js/theme_default/tocbot.min.js"></script>
+    
+        <script src="/static/js/theme_default/main.js"></script>
+    
+        <script src="/static/js/theme_default/viewer.min.js"></script>
+    
+        <script src="/static/css/theme_default/prism.min.js"></script>
+    
+        <script src="/static/js/custom.js"></script>
+    
+</body>
+
+</html>
