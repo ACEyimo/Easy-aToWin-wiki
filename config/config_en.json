@@ -6,7 +6,7 @@
             "alt": "Easy-aToWin logo",
             "src": "/static/image/logo.svg"
         },
-        "home_url": "/",
+        "home_url": "/en/",
         "items": [
             {
                 "url": "/user/en/",
@@ -25,7 +25,7 @@
                 "position": "left"
             },
             {
-                "url": "https://github.com/aceyimo/easy-aToWin",
+                "url": "https://github.com/aceyimo/Easy-aToWin",
                 "label": "<img src='/static/image/github.png' style='height: 2em;vertical-align: middle;'>",
                 "target": "_blank",
                 "position": "right"
@@ -64,17 +64,17 @@
                 "items": [
                     {
                         "label": "GitHub",
-                        "url": "https://github.com/ACEyimo/easy-aToWin",
+                        "url": "https://github.com/ACEyimo/Easy-aToWin",
                         "target": "_blank"
                     },
                     {
-                        "label": "Gitee",
-                        "url": "https://gitee.com/ACEyimo/easy-aToWin",
+                        "label": "FxxK U Gitee",
+                        "url": "https://gitee.com/ACEyimo/Easy-aToWin",
                         "target": "_blank"
                     },
                     {
                         "label": "The docs link",
-                        "url": "https://github.com/aceyimo/easy-aToWin",
+                        "url": "https://github.com/aceyimo/Easy-aToWin-wiki",
                         "target": "_blank"
                     }
                 ]

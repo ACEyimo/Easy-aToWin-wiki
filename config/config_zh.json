@@ -25,7 +25,7 @@
                 "position": "left"
             },
             {
-                "url": "https://github.com/aceyimo/easy-aToWin",
+                "url": "https://github.com/aceyimo/Easy-aToWin",
                 "label": "<img src='/static/image/github.png' style='height: 2em;vertical-align: middle;'>",
                 "target": "_blank",
                 "position": "right"
@@ -68,13 +68,13 @@
                         "target": "_blank"
                     },
                     {
-                        "label": "Gitee",
+                        "label": "FxxK U Gitee",
                         "url": "https://gitee.com/ACEyimo/Easy-aToWin",
                         "target": "_blank"
                     },
                     {
                         "label": "文档地址",
-                        "url": "https://github.com/aceyimo/Easy-aToWin",
+                        "url": "https://github.com/aceyimo/Easy-aToWin-wiki",
                         "target": "_blank"
                     }
                 ]

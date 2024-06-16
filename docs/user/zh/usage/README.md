@@ -6,10 +6,10 @@ desc: Easy-aToWin，轻松从Android跨越到Windows，一个从安卓到windows
 >! **刷机包依赖文件名，请严格按照规则命名，切勿随意修改！**   **\[**详情参照[文件名说明](fileName.md)**\]**
 
 ## 刷机前准备
++ 一个 **脑子**
 + [TWRP](https://twrp.me/Devices/)等第三方REC
-+ [刷机包](./download/)
++ [分区包](./download/) 和 [刷写包](./download/)
 + [WIndows镜像](./download/win.md)
-+ 最好带上**脑子**
 ---
 
 ## 刷机包类型
